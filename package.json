@@ -1,0 +1,24 @@
+{
+  "name": "osan-drinks",
+  "version": "1.0.0",
+  "description": "Marketing skills framework for Osan Drinks",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test",
+    "skills:add": "npx skills add",
+    "skills:update": "npx skills update",
+    "skills:list": "npx skills list"
+  },
+  "keywords": [
+    "marketing",
+    "skills",
+    "drinks"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mempalace": "^2.0.0"
+  }
+}
