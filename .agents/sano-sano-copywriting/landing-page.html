@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
     /* ─── RESET & BASE ─── */
@@ -1453,6 +1455,72 @@
       line-height: 1.7;
     }
 
+    /* ─── REVENDEURS / MAP ─── */
+    #revendeurs {
+      background: var(--cream);
+      color: var(--text);
+    }
+    #revendeurs .section-label { color: var(--text-muted); }
+    #revendeurs .section-title { color: var(--text); margin-bottom: 72px; }
+
+    .map-container {
+      width: 100%;
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    .stores-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .store-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 32px;
+      border: 1px solid rgba(26,26,24,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .store-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    .store-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .store-type {
+      font-size: 0.85rem;
+      color: var(--green);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .store-address {
+      font-size: 0.9rem;
+      color: rgba(26,26,24,0.65);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .store-info {
+      font-size: 0.85rem;
+      color: rgba(26,26,24,0.55);
+      line-height: 1.5;
+    }
+
     /* ─── STAT COUNTER ─── */
     .stat-counter {
       display: inline-block;
@@ -1467,12 +1535,15 @@
       .procede-visual { order: -1; min-height: 280px; }
       .foster-section { grid-template-columns: 1fr; gap: 48px; padding: 48px; }
       .contact-info { grid-template-columns: 1fr; }
+      .stores-list { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; text-align: center; }
       .footer-legal { text-align: center; }
     }
 
     @media (max-width: 768px) {
       section { padding: 72px 0; }
+      .map-container { height: 350px; }
+      .stores-list { grid-template-columns: 1fr; }
 
       nav { background: rgba(11,12,10,0.95); backdrop-filter: blur(16px); }
       .nav-links { display: none; }
@@ -2046,6 +2117,108 @@
 </section>
 
 <!-- ══════════════════════════════════════════
+     SECTION 6 — REVENDEURS
+══════════════════════════════════════════ -->
+<section id="revendeurs" aria-labelledby="revendeurs-heading">
+  <div class="container">
+
+    <div class="section-label reveal">Disponible à proximité</div>
+    <h2 class="section-title reveal reveal-delay-1" id="revendeurs-heading">
+      Où <em>trouver</em> Sano Sano.
+    </h2>
+
+    <!-- Map -->
+    <div class="map-container reveal reveal-delay-2">
+      <div id="map"></div>
+    </div>
+
+    <!-- Stores List -->
+    <div class="stores-list">
+
+      <div class="store-card reveal">
+        <div class="store-type">Restaurant</div>
+        <div class="store-name">Brasserie Centrale</div>
+        <div class="store-address">
+          Place Sainte-Catherine<br>
+          Wavre, Belgique
+        </div>
+        <div class="store-info">
+          Apéritifs premium<br>
+          +32 475 95 46 33
+        </div>
+      </div>
+
+      <div class="store-card reveal reveal-delay-1">
+        <div class="store-type">Hôtel</div>
+        <div class="store-name">Hotel Luxe Brussels</div>
+        <div class="store-address">
+          Rue Royale 255<br>
+          Bruxelles, Belgique
+        </div>
+        <div class="store-info">
+          Restaurant & bar<br>
+          Pour les clients
+        </div>
+      </div>
+
+      <div class="store-card reveal reveal-delay-2">
+        <div class="store-type">Boutique</div>
+        <div class="store-name">Le Marché Gourmet</div>
+        <div class="store-address">
+          Rue de Turenne 42<br>
+          Paris, France
+        </div>
+        <div class="store-info">
+          Produits premium<br>
+          +33 1 23 45 67 89
+        </div>
+      </div>
+
+      <div class="store-card reveal reveal-delay-1">
+        <div class="store-type">Restaurant</div>
+        <div class="store-name">De Kas Amsterdam</div>
+        <div class="store-address">
+          Kerkstraat 45<br>
+          Amsterdam, Pays-Bas
+        </div>
+        <div class="store-info">
+          Cuisine contemporaine<br>
+          Réservations recommandées
+        </div>
+      </div>
+
+      <div class="store-card reveal reveal-delay-2">
+        <div class="store-type">Bar à vin</div>
+        <div class="store-name">Cave Premium Lyon</div>
+        <div class="store-address">
+          Rue Saint-Jean 78<br>
+          Lyon, France
+        </div>
+        <div class="store-info">
+          Sélection exclusive<br>
+          +33 4 78 90 12 34
+        </div>
+      </div>
+
+      <div class="store-card reveal">
+        <div class="store-type">Hôtel</div>
+        <div class="store-name">Grand Hotel Amsterdam</div>
+        <div class="store-address">
+          Herengracht 123<br>
+          Amsterdam, Pays-Bas
+        </div>
+        <div class="store-info">
+          À la réception<br>
+          Clients résidents
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
      FOOTER
 ══════════════════════════════════════════ -->
 <footer role="contentinfo">
@@ -2153,6 +2326,39 @@
 
   const heroSection = document.getElementById('hero');
   if (heroSection) counterObserver.observe(heroSection);
+
+  // ── Map initialization ──
+  const mapElement = document.getElementById('map');
+  if (mapElement) {
+    const map = L.map('map').setView([50.5, 4.5], 5);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+
+    const stores = [
+      { name: 'Brasserie Centrale', city: 'Wavre, Belgique', lat: 50.7126, lng: 4.6144, type: 'Restaurant' },
+      { name: 'Hotel Luxe Brussels', city: 'Bruxelles, Belgique', lat: 50.8503, lng: 4.3517, type: 'Hôtel' },
+      { name: 'Le Marché Gourmet', city: 'Paris, France', lat: 48.8566, lng: 2.3522, type: 'Boutique' },
+      { name: 'De Kas Amsterdam', city: 'Amsterdam, Pays-Bas', lat: 52.3676, lng: 4.9041, type: 'Restaurant' },
+      { name: 'Cave Premium Lyon', city: 'Lyon, France', lat: 45.7640, lng: 4.8357, type: 'Bar à vin' },
+      { name: 'Grand Hotel Amsterdam', city: 'Amsterdam, Pays-Bas', lat: 52.3729, lng: 4.8916, type: 'Hôtel' }
+    ];
+
+    stores.forEach(store => {
+      const popupContent = `<div style="font-family:'Playfair Display',serif; font-size:1rem; font-weight:700; color:#1A1A18; margin-bottom:4px;">${store.name}</div><div style="font-size:0.85rem; color:#4A7C59; font-weight:600; margin-bottom:8px;">${store.type}</div><div style="font-size:0.9rem; color:#6B6B65;">${store.city}</div>`;
+
+      const marker = L.circleMarker([store.lat, store.lng], {
+        radius: 8,
+        fillColor: '#4A7C59',
+        color: '#fff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.8
+      }).bindPopup(popupContent).addTo(map);
+    });
+  }
 
   // ── Smooth anchor scroll (for older browsers) ──
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
