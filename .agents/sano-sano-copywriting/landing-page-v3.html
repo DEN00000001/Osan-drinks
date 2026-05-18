@@ -253,186 +253,209 @@
       font-weight: 400;
     }
 
-    /* ─── HERO ─── */
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding-top: 0;
-      padding-bottom: 0;
+    /* ─── HERO SCROLL PIN ─── */
+    #hero-scroll-pin {
+      height: 200vh;
       position: relative;
-      overflow: hidden;
-      margin-top: 104px;
-      background: #000;
-    }
-    #hero video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-    #hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(26,26,24,0.65) 0%, rgba(26,26,24,0.6) 50%, rgba(0,0,0,0.4) 100%);
-      pointer-events: none;
-      z-index: 1;
     }
 
-    .hero-content {
-      flex: 1;
+    #hero {
+      height: calc(100vh - 64px);
+      position: sticky;
+      top: 64px;
+      overflow: hidden;
+      background: var(--cream);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 130px 24px 80px;
-      max-width: 720px;
-      margin: 0 auto;
-      width: 100%;
-      position: relative;
-      z-index: 2;
+      padding: 0;
+      margin-top: 64px;
     }
-    .hero-text { max-width: 600px; }
-    .hero-visual { display: none; }
-    .hero-image { display: none; }
+
+    /* Floating botanical SVG accents */
+    .hero-botanical {
+      position: absolute;
+      pointer-events: none;
+      z-index: 3;
+      will-change: transform;
+      animation: floatBotanical 8s ease-in-out infinite alternate;
+    }
+    .hero-botanical-1 { top: 12%; left: 6%;  animation-delay: 0s; }
+    .hero-botanical-2 { top: 16%; right: 7%; animation-delay: -2s; }
+    .hero-botanical-3 { bottom: 18%; left: 8%;  animation-delay: -4s; }
+    .hero-botanical-4 { bottom: 14%; right: 6%; animation-delay: -6s; }
+    @keyframes floatBotanical {
+      from { transform: translateY(0) rotate(0deg); }
+      to   { transform: translateY(-14px) rotate(4deg); }
+    }
+
+    /* Text block — left side */
+    .hero-text-left {
+      position: absolute;
+      left: 7%;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 4;
+      max-width: 400px;
+      will-change: opacity, transform;
+    }
 
     .hero-label {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.8);
-      margin-bottom: 28px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
     }
     .hero-label::before {
       content: '';
       display: block;
-      width: 28px;
+      width: 24px;
       height: 1px;
-      background: rgba(255,255,255,0.6);
+      background: var(--gold);
     }
 
     .hero-headline {
-      font-size: clamp(3.6rem, 8.5vw, 7.8rem);
+      font-size: clamp(2.6rem, 5vw, 4.8rem);
       font-weight: 900;
       line-height: 0.95;
-      color: var(--white);
+      color: var(--text);
       letter-spacing: -0.02em;
       margin-bottom: 28px;
-      text-shadow: 0 4px 20px rgba(0,0,0,0.5);
     }
     .hero-headline em {
       font-style: italic;
       color: var(--rose);
     }
-    .hero-headline .line-rose { color: var(--rose); }
-
-    .hero-sub {
-      font-size: 1.1rem;
-      color: rgba(255,255,255,0.85);
-      max-width: 480px;
-      line-height: 1.7;
-      margin-bottom: 40px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
 
     .hero-badges {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 44px;
+      gap: 8px;
+      margin-bottom: 32px;
     }
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 7px 16px;
+      padding: 6px 14px;
       border-radius: 100px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
     }
     .badge-light {
       background: rgba(26,26,24,0.06);
-      color: rgba(26,26,24,0.75);
+      color: var(--text-muted);
       border: 1px solid rgba(26,26,24,0.12);
     }
     .badge-green {
-      background: rgba(74,124,89,0.1);
+      background: rgba(26,58,40,0.08);
       color: var(--green);
-      border: 1px solid rgba(74,124,89,0.2);
+      border: 1px solid rgba(26,58,40,0.15);
     }
     .badge-gold {
-      background: rgba(201,168,76,0.12);
+      background: rgba(157,124,43,0.1);
       color: var(--gold);
-      border: 1px solid rgba(201,168,76,0.25);
+      border: 1px solid rgba(157,124,43,0.2);
     }
-    .badge-icon { font-size: 0.85rem; }
+    .badge-icon { font-size: 0.8rem; }
 
     .hero-ctas {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 12px;
       align-items: center;
     }
 
+    /* Bottle stage — right half */
+    .hero-bottle-stage {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 55%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .hero-bottle {
+      position: absolute;
+      height: 80vh;
+      max-height: 680px;
+      width: auto;
+      will-change: transform, opacity;
+      filter: drop-shadow(0 28px 56px rgba(26,26,24,0.12));
+    }
+    .hero-bottle-blanc { z-index: 2; transform: translateX(0) scale(1); opacity: 1; }
+    .hero-bottle-rose  { z-index: 1; transform: translateX(30%) scale(0.88); opacity: 0; }
+
+    /* Flavour progress dots */
+    .hero-flavour-dots {
+      position: absolute;
+      bottom: 28px;
+      right: 7%;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      z-index: 5;
+    }
+    .flavour-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(26,26,24,0.18);
+      transition: all 0.5s ease;
+    }
+    .flavour-dot.active {
+      background: var(--green);
+      height: 18px;
+      border-radius: 3px;
+    }
+
+    /* Scroll indicator */
     .hero-scroll {
       position: absolute;
-      bottom: 32px;
+      bottom: 28px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 8px;
-      color: rgba(255,255,255,0.6);
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
+      gap: 7px;
+      color: rgba(26,26,24,0.3);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      animation: bounce 2s ease-in-out infinite;
-      z-index: 2;
+      animation: bounce 2.5s ease-in-out infinite;
+      z-index: 5;
     }
     .scroll-arrow {
-      width: 20px;
-      height: 20px;
-      border-right: 1.5px solid rgba(255,255,255,0.6);
-      border-bottom: 1.5px solid rgba(255,255,255,0.6);
+      width: 16px;
+      height: 16px;
+      border-right: 1.5px solid rgba(26,26,24,0.3);
+      border-bottom: 1.5px solid rgba(26,26,24,0.3);
       transform: rotate(45deg);
     }
     @keyframes bounce {
       0%, 100% { transform: translateX(-50%) translateY(0); }
-      50%       { transform: translateX(-50%) translateY(8px); }
+      50%       { transform: translateX(-50%) translateY(6px); }
     }
 
-    /* ─── HERO LAYOUT (Text + Image) ─── */
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
-    }
+    /* Legacy classes hidden */
+    .hero-content { display: none; }
+    .hero-text    { display: none; }
+    .hero-visual  { display: none; }
+    .hero-image   { display: none; }
+    .hero-sub     { display: none; }
 
-    .hero-image {
-      width: 100%;
-      height: auto;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-    }
-    .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* ─── BOTTLE CSS (hidden but kept for reference) ─── */
+    /* ─── CSS BOTTLE (used in saveurs cards) ─── */
     .bottles-scene {
       position: relative;
       width: 260px;
@@ -442,7 +465,6 @@
       justify-content: center;
       gap: 20px;
     }
-
     .bottle {
       position: relative;
       width: 80px;
@@ -452,36 +474,13 @@
       box-shadow: 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.3), inset -4px 0 12px rgba(0,0,0,0.2);
       flex-shrink: 0;
     }
-    .bottle-inner {
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-    }
-
-    /* Bulles Blanches gradient */
+    .bottle-inner { position: absolute; inset: 0; border-radius: inherit; }
     .bottle-blanc .bottle-inner {
-      background: linear-gradient(
-        175deg,
-        rgba(255,255,255,0.95) 0%,
-        rgba(220,240,225,0.85) 25%,
-        rgba(180,220,195,0.8) 55%,
-        rgba(143,191,159,0.9) 80%,
-        rgba(74,124,89,0.7) 100%
-      );
+      background: linear-gradient(175deg, rgba(255,255,255,0.95) 0%, rgba(220,240,225,0.85) 25%, rgba(180,220,195,0.8) 55%, rgba(143,191,159,0.9) 80%, rgba(74,124,89,0.7) 100%);
     }
-    /* Bulles Rosées gradient */
     .bottle-rose .bottle-inner {
-      background: linear-gradient(
-        175deg,
-        rgba(255,240,242,0.95) 0%,
-        rgba(240,200,205,0.9) 25%,
-        rgba(220,155,165,0.85) 55%,
-        rgba(196,97,106,0.85) 80%,
-        rgba(160,60,70,0.8) 100%
-      );
+      background: linear-gradient(175deg, rgba(255,240,242,0.95) 0%, rgba(240,200,205,0.9) 25%, rgba(220,155,165,0.85) 55%, rgba(196,97,106,0.85) 80%, rgba(160,60,70,0.8) 100%);
     }
-
-    /* Muselet */
     .bottle::before {
       content: '';
       position: absolute;
@@ -495,7 +494,6 @@
       z-index: 3;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
-    /* Neck */
     .bottle-neck {
       position: absolute;
       top: 0;
@@ -508,9 +506,7 @@
       overflow: hidden;
     }
     .bottle-blanc .bottle-neck { background: rgba(220,240,225,0.7); }
-    .bottle-rose .bottle-neck { background: rgba(240,190,195,0.7); }
-
-    /* Shine overlay */
+    .bottle-rose  .bottle-neck { background: rgba(240,190,195,0.7); }
     .bottle-shine {
       position: absolute;
       top: 5%;
@@ -521,8 +517,6 @@
       border-radius: 10px;
       z-index: 4;
     }
-
-    /* Label */
     .bottle-label {
       position: absolute;
       bottom: 28px;
@@ -533,26 +527,9 @@
       border-radius: 4px;
       text-align: center;
       z-index: 5;
-      font-family: 'Playfair Display', serif;
     }
-    .bottle-blanc .bottle-label {
-      background: rgba(255,255,255,0.75);
-      color: var(--green);
-      font-size: 0.32rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .bottle-rose .bottle-label {
-      background: rgba(255,255,255,0.75);
-      color: var(--rose);
-      font-size: 0.32rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    /* Bubbles */
+    .bottle-blanc .bottle-label { background: rgba(255,255,255,0.75); color: var(--green); font-size: 0.32rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+    .bottle-rose  .bottle-label { background: rgba(255,255,255,0.75); color: var(--rose);  font-size: 0.32rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
     .bubble {
       position: absolute;
       border-radius: 50%;
@@ -561,21 +538,17 @@
       z-index: 6;
     }
     .bottle-blanc .bubble { background: rgba(255,255,255,0.7); }
-    .bottle-rose .bubble  { background: rgba(255,200,205,0.7); }
-
+    .bottle-rose  .bubble { background: rgba(255,200,205,0.7); }
     .bubble:nth-child(1) { width: 5px; height: 5px; left: 18%; bottom: -8px; animation-duration: 4.2s; animation-delay: 0s; }
     .bubble:nth-child(2) { width: 3px; height: 3px; left: 38%; bottom: -8px; animation-duration: 3.5s; animation-delay: 0.8s; }
     .bubble:nth-child(3) { width: 4px; height: 4px; left: 62%; bottom: -8px; animation-duration: 5s;   animation-delay: 1.5s; }
     .bubble:nth-child(4) { width: 3px; height: 3px; left: 78%; bottom: -8px; animation-duration: 3.8s; animation-delay: 2.3s; }
-
     @keyframes rise {
       0%   { transform: translateY(0) translateX(0); opacity: 0; }
       10%  { opacity: 0.9; }
       90%  { opacity: 0.4; }
       100% { transform: translateY(-260px) translateX(8px); opacity: 0; }
     }
-
-    /* Bottle glow */
     .bottle-blanc { filter: drop-shadow(0 0 18px rgba(143,191,159,0.35)); }
     .bottle-rose  { filter: drop-shadow(0 0 18px rgba(196,97,106,0.35)); }
 
@@ -1110,6 +1083,23 @@
       grid-template-columns: 1fr 1fr;
       gap: 80px;
       align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .foster-section .foster-video-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .foster-section .foster-video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.08;
+    }
+    .foster-section > *:not(.foster-video-bg) {
+      position: relative;
+      z-index: 1;
     }
 
     .foster-botanical {
@@ -1580,6 +1570,11 @@
       .stores-list { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; text-align: center; }
       .footer-legal { text-align: center; }
+
+      /* Hero: shrink text on tablet */
+      .hero-text-left { max-width: 320px; left: 5%; }
+      .hero-bottle-stage { width: 52%; }
+      .hero-bottle { height: 68vh; }
     }
 
     @media (max-width: 768px) {
@@ -1587,17 +1582,48 @@
       .map-container { height: 350px; }
       .stores-list { grid-template-columns: 1fr; }
 
-      nav { background: rgba(11,12,10,0.95); backdrop-filter: blur(16px); }
+      nav { background: rgba(244,241,236,0.96); backdrop-filter: blur(16px); }
       .nav-links { display: none; }
       .nav-cta { display: none; }
       .hamburger { display: flex; }
 
-      .hero-content {
-        padding: 100px 24px 60px;
-        max-width: 100%;
+      /* Hero mobile: stacked layout, bottle on top */
+      #hero-scroll-pin { height: 100vh; }
+      #hero {
+        height: calc(100vh - 60px);
+        top: 60px;
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 48px;
       }
-
-      .hero-sub { max-width: 100%; }
+      .hero-text-left {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        text-align: center;
+        max-width: 90%;
+        padding: 0 20px;
+        z-index: 4;
+      }
+      .hero-bottle-stage {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 40%;
+        width: 100%;
+        z-index: 2;
+      }
+      .hero-bottle { height: 42vh; max-height: 320px; }
+      .hero-flavour-dots { display: none; }
+      .hero-badges { justify-content: center; }
+      .hero-ctas { justify-content: center; }
+      /* Disable scroll animation on mobile */
+      .hero-bottle-blanc { opacity: 1 !important; transform: none !important; }
+      .hero-bottle-rose  { display: none; }
 
       .differentiateurs { grid-template-columns: 1fr; }
       .differentiateurs .diff-bloc:last-child { max-width: none; }
@@ -1678,54 +1704,91 @@
 </div>
 
 <!-- ══════════════════════════════════════════
-     SECTION 1 — HERO
+     SECTION 1 — HERO (scroll-pinned bottle animation)
 ══════════════════════════════════════════ -->
+<div id="hero-scroll-pin">
 <section id="hero" aria-labelledby="hero-heading">
-  <video autoplay muted loop playsinline aria-hidden="true">
-    <source src="./images/foster-farm-hero.mp4" type="video/mp4">
-  </video>
-  <div class="hero-content">
 
-    <!-- Text -->
-    <div class="hero-text">
-      <div class="hero-label reveal">Boisson botanique belge premium</div>
-
-      <h1 class="hero-headline reveal reveal-delay-1" id="hero-heading">
-        Zero compromis.<br>
-        <em>100%</em> festif.
-      </h1>
-
-      <div class="hero-badges reveal reveal-delay-3">
-        <span class="badge badge-light">
-          <span class="badge-icon">○</span>
-          <span class="stat-counter" data-target="0">0</span>,00% Alcool
-        </span>
-        <span class="badge badge-green">
-          <span class="badge-icon">✿</span>
-          Bio Certifié FR-BIO-01
-        </span>
-        <span class="badge badge-gold">
-          <span class="badge-icon">◇</span>
-          &lt;&nbsp;<span class="stat-counter" data-target="6">6</span>&nbsp;kcal / 100ml
-        </span>
-      </div>
-
-      <div class="hero-ctas reveal reveal-delay-4">
-        <a href="#saveurs" class="btn btn-outline-light">Découvrir nos saveurs</a>
-      </div>
-    </div>
-
-    <!-- Hero Image -->
-    <div class="hero-image reveal reveal-delay-2">
-      <img src="https://i.imgur.com/DO3CqJq.png" alt="Sano Sano bottled beverages on warm sand with natural light" />
-    </div>
-
+  <!-- Floating botanical accents -->
+  <div class="hero-botanical hero-botanical-1" aria-hidden="true">
+    <svg width="60" height="80" viewBox="0 0 60 80" fill="none">
+      <path d="M30 75 C30 75 10 55 12 35 C14 15 30 5 30 5 C30 5 46 15 48 35 C50 55 30 75 30 75Z" fill="rgba(26,58,40,0.1)" stroke="rgba(26,58,40,0.18)" stroke-width="1"/>
+      <line x1="30" y1="8" x2="30" y2="72" stroke="rgba(26,58,40,0.2)" stroke-width="1" stroke-dasharray="3 4"/>
+    </svg>
+  </div>
+  <div class="hero-botanical hero-botanical-2" aria-hidden="true">
+    <svg width="52" height="68" viewBox="0 0 52 68" fill="none">
+      <ellipse cx="26" cy="34" rx="17" ry="27" fill="rgba(139,58,66,0.07)" stroke="rgba(139,58,66,0.15)" stroke-width="1" transform="rotate(-18 26 34)"/>
+      <line x1="26" y1="6" x2="26" y2="62" stroke="rgba(139,58,66,0.18)" stroke-width="1" stroke-dasharray="3 4"/>
+    </svg>
+  </div>
+  <div class="hero-botanical hero-botanical-3" aria-hidden="true">
+    <svg width="54" height="54" viewBox="0 0 54 54" fill="none">
+      <circle cx="27" cy="27" r="20" fill="none" stroke="rgba(157,124,43,0.18)" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <circle cx="27" cy="27" r="5" fill="rgba(157,124,43,0.14)"/>
+    </svg>
+  </div>
+  <div class="hero-botanical hero-botanical-4" aria-hidden="true">
+    <svg width="48" height="72" viewBox="0 0 48 72" fill="none">
+      <path d="M24 68 C24 68 6 50 8 30 C10 10 24 4 24 4 C24 4 38 10 40 30 C42 50 24 68 24 68Z" fill="rgba(26,58,40,0.08)" stroke="rgba(26,58,40,0.15)" stroke-width="1" transform="rotate(22 24 36)"/>
+    </svg>
   </div>
 
+  <!-- Text — left column -->
+  <div class="hero-text-left" id="hero-text">
+    <div class="hero-label">Boisson botanique belge premium</div>
+    <h1 class="hero-headline" id="hero-heading">
+      Zero compromis.<br>
+      <em>100%</em> festif.
+    </h1>
+    <div class="hero-badges">
+      <span class="badge badge-light">
+        <span class="badge-icon">○</span>
+        <span class="stat-counter" data-target="0">0</span>,00% Alcool
+      </span>
+      <span class="badge badge-green">
+        <span class="badge-icon">✿</span>
+        Bio FR-BIO-01
+      </span>
+      <span class="badge badge-gold">
+        <span class="badge-icon">◇</span>
+        &lt;&nbsp;<span class="stat-counter" data-target="6">6</span>&nbsp;kcal
+      </span>
+    </div>
+    <div class="hero-ctas">
+      <a href="#saveurs" class="btn btn-green">Découvrir nos saveurs</a>
+    </div>
+  </div>
+
+  <!-- Bottle stage — right half -->
+  <div class="hero-bottle-stage" aria-label="Les deux saveurs Sano Sano">
+    <img
+      class="hero-bottle hero-bottle-blanc"
+      src="./images/bottle-blanc.png"
+      alt="Sano Sano Bulles Blanches — Basilic · Gingembre"
+      id="bottle-blanc"
+    />
+    <img
+      class="hero-bottle hero-bottle-rose"
+      src="./images/bottle-rose.png"
+      alt="Sano Sano Bulles Rosées — Thym · Fraise"
+      id="bottle-rose"
+    />
+  </div>
+
+  <!-- Flavour progress dots -->
+  <div class="hero-flavour-dots" aria-hidden="true">
+    <div class="flavour-dot active" id="dot-blanc"></div>
+    <div class="flavour-dot" id="dot-rose"></div>
+  </div>
+
+  <!-- Scroll indicator -->
   <div class="hero-scroll" aria-hidden="true">
     <div class="scroll-arrow"></div>
   </div>
+
 </section>
+</div>
 
 <!-- ══════════════════════════════════════════
      SECTION 2 — POURQUOI SANO SANO
@@ -2029,6 +2092,13 @@
 
     <!-- 4B — Foster Farm -->
     <div class="foster-section reveal">
+
+      <!-- Subtle video atmosphere -->
+      <div class="foster-video-bg" aria-hidden="true">
+        <video autoplay muted loop playsinline>
+          <source src="./images/foster-farm-hero.mp4" type="video/mp4">
+        </video>
+      </div>
 
       <div>
         <div class="section-label" style="margin-bottom: 16px;">Nos origines</div>
@@ -2386,12 +2456,53 @@
     });
   });
 
-  // ── Hero reveal on load ──
-  window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-      document.querySelectorAll('#hero .reveal').forEach(el => el.classList.add('visible'));
-    }, 100);
-  });
+  // ── Hero bottle scroll animation ──
+  (function() {
+    const pin       = document.getElementById('hero-scroll-pin');
+    const bBlunc    = document.getElementById('bottle-blanc');
+    const bRose     = document.getElementById('bottle-rose');
+    const heroText  = document.getElementById('hero-text');
+    const dotBlanc  = document.getElementById('dot-blanc');
+    const dotRose   = document.getElementById('dot-rose');
+    let ticking = false;
+
+    function heroAnim() {
+      if (!pin || !bBlunc || !bRose) return;
+      const pinTop   = pin.getBoundingClientRect().top;
+      const viewH    = window.innerHeight;
+      const progress = Math.max(0, Math.min(1, -pinTop / viewH));
+
+      // Phase 1 (0 → 0.55): blanc exits to the left
+      const exitP  = Math.min(1, progress / 0.55);
+      // Phase 2 (0.35 → 1): rosé enters from the right
+      const enterP = Math.max(0, Math.min(1, (progress - 0.35) / 0.65));
+
+      bBlunc.style.transform = `translateX(${-(exitP * 38)}%) scale(${1 - exitP * 0.1})`;
+      bBlunc.style.opacity   = String(1 - exitP);
+
+      bRose.style.transform  = `translateX(${(1 - enterP) * 28}%) scale(${0.88 + enterP * 0.12})`;
+      bRose.style.opacity    = String(enterP);
+
+      if (heroText) {
+        heroText.style.opacity   = String(Math.max(0, 1 - exitP * 1.6));
+        heroText.style.transform = `translateY(-50%) translateX(${-exitP * 20}px)`;
+      }
+
+      if (dotBlanc && dotRose) {
+        const blanc2 = progress < 0.5;
+        dotBlanc.classList.toggle('active', blanc2);
+        dotRose.classList.toggle('active', !blanc2);
+      }
+
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function() {
+      if (!ticking) { requestAnimationFrame(heroAnim); ticking = true; }
+    }, { passive: true });
+
+    heroAnim();
+  })();
 </script>
 </body>
 </html>
