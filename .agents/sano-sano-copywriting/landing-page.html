@@ -1428,6 +1428,31 @@
       letter-spacing: 0.06em;
     }
 
+    /* ─── CONTACT INFO ─── */
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      margin-top: 80px;
+      padding-top: 60px;
+      border-top: 1px solid rgba(26,26,24,0.1);
+    }
+    .contact-item {
+      text-align: center;
+    }
+    .contact-item a {
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .contact-item a:hover {
+      color: var(--gold);
+    }
+    .contact-item p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
     /* ─── STAT COUNTER ─── */
     .stat-counter {
       display: inline-block;
@@ -1441,6 +1466,7 @@
       .procede-layout { grid-template-columns: 1fr; gap: 48px; }
       .procede-visual { order: -1; min-height: 280px; }
       .foster-section { grid-template-columns: 1fr; gap: 48px; padding: 48px; }
+      .contact-info { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; text-align: center; }
       .footer-legal { text-align: center; }
     }
@@ -1528,9 +1554,7 @@
       <li><a href="#pourquoi">Notre histoire</a></li>
       <li><a href="#saveurs">Nos saveurs</a></li>
       <li><a href="#procede">Le procédé</a></li>
-      <li><a href="#commander">Commander</a></li>
     </ul>
-    <a href="#commander" class="btn btn-gold nav-cta">Commander — 9,90€</a>
     <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -1542,8 +1566,6 @@
   <a href="#pourquoi" class="mobile-link">Notre histoire</a>
   <a href="#saveurs" class="mobile-link">Nos saveurs</a>
   <a href="#procede" class="mobile-link">Le procédé</a>
-  <a href="#commander" class="mobile-link">Commander</a>
-  <a href="#commander" class="btn btn-gold" style="margin-top:16px;">Commander — 9,90€</a>
 </div>
 
 <!-- ══════════════════════════════════════════
@@ -1578,7 +1600,6 @@
 
       <div class="hero-ctas reveal reveal-delay-4">
         <a href="#saveurs" class="btn btn-outline-light">Découvrir nos saveurs</a>
-        <a href="#commander" class="btn btn-gold">Commander — 9,90€</a>
       </div>
     </div>
 
@@ -1989,101 +2010,37 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     SECTION 5 — COMMANDER
+     SECTION 5 — CONTACT
 ══════════════════════════════════════════ -->
-<section id="commander" aria-labelledby="commander-heading">
+<section id="contact" aria-labelledby="contact-heading">
   <div class="container commander-inner">
 
-    <div class="section-label reveal">Sano Sano : là où ça compte vraiment</div>
-    <h2 class="commander-title reveal reveal-delay-1" id="commander-heading">
-      Une boisson comme celle-ci<br>n'existe que pour <em>vos</em> moments.
+    <div class="section-label reveal">Pour en savoir plus</div>
+    <h2 class="commander-title reveal reveal-delay-1" id="contact-heading">
+      Nous aimerions vous <em>rencontrer</em>.
     </h2>
     <p class="commander-sub reveal reveal-delay-2">
-      Pas pour la multitude.
+      Sano Sano est actuellement en développement auprès de partenaires premium : restaurants, hôtels, et lieux de célébration qui partagent nos valeurs.
       <br>
       <br>
-      Pour l'apéritif urbain avec des gens qui partagent vos valeurs.
-      <br>
-      Pour le dîner où chaque détail raconte l'attention qu'on se porte.
-      <br>
-      Pour la soirée où vous célébrez sans vous excuser.
-      <br>
-      <br>
-      Bientôt chez les restaurants et hôtels qui pensent comme vous.
-      <br>
-      Mais maintenant, vous pouvez commencer : commandez directement et goûtez le moment ce soir.
+      Pour découvrir nos saveurs, des questions, ou des partenariats — contactez-nous directement.
     </p>
 
-    <!-- Produits -->
-    <div class="produits-grid">
-
-      <div class="produit-card blanc-card reveal">
-        <div class="produit-bottle-mini" aria-hidden="true"></div>
-        <div class="produit-info">
-          <div class="produit-name">Bulles Blanches</div>
-          <div class="produit-flavor">Basilic · Gingembre</div>
-          <div class="produit-price">9,90€<span>/ 75cl</span></div>
-        </div>
+    <!-- Contact Info -->
+    <div class="contact-info reveal reveal-delay-3">
+      <div class="contact-item">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 12px; color: var(--text);">Email</h3>
+        <a href="mailto:jerome@osandrinks.com" style="color: var(--green); text-decoration: underline;">jerome@osandrinks.com</a>
       </div>
-
-      <div class="produit-card rose-card reveal reveal-delay-1">
-        <div class="produit-bottle-mini" aria-hidden="true" style="background: linear-gradient(175deg, rgba(255,240,242,0.9), rgba(196,97,106,0.8), rgba(150,50,60,0.7)); box-shadow: 0 8px 24px rgba(196,97,106,0.25);"></div>
-        <div class="produit-info">
-          <div class="produit-name">Bulles Rosées</div>
-          <div class="produit-flavor">Thym · Fraise</div>
-          <div class="produit-price">9,90€<span>/ 75cl</span></div>
-        </div>
+      <div class="contact-item">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 12px; color: var(--text);">Téléphone</h3>
+        <a href="tel:+32475954633" style="color: var(--green); text-decoration: underline;">+32 475 95 46 33</a>
       </div>
-
+      <div class="contact-item">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 12px; color: var(--text);">Localisation</h3>
+        <p style="color: rgba(26,26,24,0.75);">Wavre, Belgique<br>Produit à Foster Farm</p>
+      </div>
     </div>
-
-    <!-- Formulaire -->
-    <div class="form-wrapper reveal">
-      <h3 class="form-title">Passez votre commande</h3>
-      <form id="orderForm" novalidate>
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Adresse email</label>
-            <input type="email" id="email" name="email" placeholder="vous@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="qty-blanc">Bulles Blanches — Basilic · Gingembre</label>
-            <select id="qty-blanc" name="qty-blanc">
-              <option value="0">0 bouteille</option>
-              <option value="1">1 bouteille — 9,90€</option>
-              <option value="2">2 bouteilles — 19,80€</option>
-              <option value="3">3 bouteilles — 29,70€</option>
-              <option value="6">6 bouteilles — 59,40€</option>
-              <option value="12">12 bouteilles — 118,80€</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="qty-rose">Bulles Rosées — Thym · Fraise</label>
-            <select id="qty-rose" name="qty-rose">
-              <option value="0">0 bouteille</option>
-              <option value="1" selected>1 bouteille — 9,90€</option>
-              <option value="2">2 bouteilles — 19,80€</option>
-              <option value="3">3 bouteilles — 29,70€</option>
-              <option value="6">6 bouteilles — 59,40€</option>
-              <option value="12">12 bouteilles — 118,80€</option>
-            </select>
-          </div>
-          <div class="form-group full">
-            <label for="message">Message ou précision (optionnel)</label>
-            <input type="text" id="message" name="message" placeholder="Livraison, occasion, question…" />
-          </div>
-        </div>
-        <button type="submit" class="btn btn-gold form-submit">
-          Commander maintenant
-        </button>
-      </form>
-    </div>
-
-    <p class="revendeurs-note reveal">Disponible bientôt chez vos revendeurs sélectionnés</p>
 
   </div>
 </section>
@@ -2196,35 +2153,6 @@
 
   const heroSection = document.getElementById('hero');
   if (heroSection) counterObserver.observe(heroSection);
-
-  // ── Form submission ──
-  const orderForm = document.getElementById('orderForm');
-  if (orderForm) {
-    orderForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name  = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const blanc = document.getElementById('qty-blanc').value;
-      const rose  = document.getElementById('qty-rose').value;
-
-      if (!name || !email) {
-        alert('Merci de renseigner votre nom et votre email.');
-        return;
-      }
-      if (blanc === '0' && rose === '0') {
-        alert('Veuillez sélectionner au moins une bouteille.');
-        return;
-      }
-
-      // Compose mailto for now (replace with real endpoint)
-      const total = (parseInt(blanc,10) + parseInt(rose,10)) * 9.9;
-      const body = encodeURIComponent(
-        `Commande Sano Sano\n\nNom : ${name}\nEmail : ${email}\n\nBulles Blanches (Basilic·Gingembre) : ${blanc} btl\nBulles Rosées (Thym·Fraise) : ${rose} btl\n\nTotal estimé : ${total.toFixed(2)} EUR\n\n---\nEnvoyé depuis sanosanodrinks.com`
-      );
-      const subject = encodeURIComponent(`Commande Sano Sano — ${name}`);
-      window.location.href = `mailto:jerome@osandrinks.com?subject=${subject}&body=${body}`;
-    });
-  }
 
   // ── Smooth anchor scroll (for older browsers) ──
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
