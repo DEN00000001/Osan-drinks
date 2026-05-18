@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sano Sano — Full celebration. No compromise.</title>
+  <meta name="description" content="Sano Sano. Botanical bubbles. 0.00% alcohol, fresh plants, low cal. Full celebration. No compromise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F4F1EC;
+      --text: #1A1A18;
+      --green: #1a3a28;
+      --rose: #8B3A42;
+      --gold: #9D7C2B;
+      --white: #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Satoshi', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── NAVBAR ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(244, 241, 236, 0.95);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(26, 26, 24, 0.08);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--cream);
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 28px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+      color: rgba(26, 26, 24, 0.75);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 40px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .hero-badges span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .hero-visual img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      #hero { min-height: auto; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 { font-size: 2rem; }
+      .hero-text p { font-size: 1rem; }
+    }
+
+    /* ─── SAVEURS ─── */
+    #saveurs {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900;
+      margin-bottom: 64px;
+      letter-spacing: -0.01em;
+    }
+
+    .saveurs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .saveur-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .saveur-image {
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: rgba(26, 26, 24, 0.4);
+    }
+
+    .saveur-body {
+      padding: 32px;
+    }
+
+    .saveur-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .saveur-subtitle {
+      font-size: 0.95rem;
+      color: rgba(26, 26, 24, 0.65);
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .saveur-desc {
+      font-size: 0.9rem;
+      color: rgba(26, 26, 24, 0.7);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .saveurs-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── CONTACT ─── */
+    #contact {
+      padding: 80px 0;
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .contact-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-content h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 28px;
+    }
+
+    .contact-content p {
+      font-size: 1rem;
+      color: rgba(26, 26, 24, 0.7);
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-link {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--green);
+      transition: opacity 0.2s;
+    }
+
+    .contact-link:hover {
+      opacity: 0.75;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: rgba(26, 26, 24, 0.05);
+      padding: 48px 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(26, 26, 24, 0.6);
+    }
+
+    footer a {
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav id="navbar">
+  <div class="container">
+    <a href="#hero" class="nav-logo">Sano Sano</a>
+    <ul class="nav-links">
+      <li><a href="#saveurs">Saveurs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <h1>Full celebration.<br>No compromise.</h1>
+
+        <div class="hero-badges">
+          <span>● 0.00% Alcohol</span>
+          <span>● Fresh Plants</span>
+          <span>● Low Cal</span>
+        </div>
+
+        <p>Sano Sano est une boisson botanique sans alcool belge premium. Jamais fermentée, bio certifiée, produite à Foster Farm en Wallonie.</p>
+      </div>
+
+      <div class="hero-visual">
+        <div style="width: 100%; max-width: 350px;">
+          <img src="https://i.imgur.com/DO3CqJq.png" alt="Sano Sano botanical bubbles" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── SAVEURS ─── -->
+<section id="saveurs">
+  <div class="container">
+    <h2 class="section-title">Deux saveurs, une âme.</h2>
+
+    <div class="saveurs-grid">
+
+      <div class="saveur-card">
+        <div class="saveur-image">[Image: Basilic-Gingembre bottle]</div>
+        <div class="saveur-body">
+          <h3 class="saveur-name">Basilic · Gingembre</h3>
+          <p class="saveur-subtitle">L'herbacée franc rencontre l'épice subtile.</p>
+          <p class="saveur-desc">
+            Attaque fraîche et végétale. Gingembre tonique en corps. Finale longue et équilibrée. Pour les apéritifs urbains et les conversations qui s'éternisent.
+          </p>
+        </div>
+      </div>
+
+      <div class="saveur-card">
+        <div class="saveur-image">[Image: Thym-Fraise bottle]</div>
+        <div class="saveur-body">
+          <h3 class="saveur-name">Thym · Fraise</h3>
+          <p class="saveur-subtitle">L'inattendu qui ravit.</p>
+          <p class="saveur-desc">
+            Attaque florale du thym. Fraise douce et acidulée en équilibre. Finale désaltérante et nuancée. Pour les moments qui surprennent.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-content">
+      <h2>Nous contacter.</h2>
+      <p>Sano Sano est en développement auprès de partenaires premium : restaurants, hôtels, et lieux de célébration qui partagent nos valeurs.</p>
+
+      <div class="contact-links">
+        <a href="mailto:jerome@osandrinks.com" class="contact-link">jerome@osandrinks.com</a>
+        <a href="tel:+32475954633" class="contact-link">+32 475 95 46 33</a>
+        <div style="color: rgba(26, 26, 24, 0.6); margin-top: 16px;">Wavre, Belgique</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="container">
+    <p>Sano Sano — Botanical Bubbles · Zero Compromise. Full Celebration. · OSAN SRL © 2025</p>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
