@@ -129,8 +129,11 @@
       overflow: hidden;
       background: var(--gold);
       padding: 10px 0;
-      position: relative;
-      z-index: 10;
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      z-index: 999;
     }
     .marquee-track {
       display: flex;
@@ -261,6 +264,7 @@
       padding-bottom: 0;
       position: relative;
       overflow: hidden;
+      margin-top: 104px;
     }
     #hero::before {
       content: '';
