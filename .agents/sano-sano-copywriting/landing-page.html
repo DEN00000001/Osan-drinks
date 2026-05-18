@@ -18,13 +18,13 @@
     :root {
       --dark:        #0B0C0A;
       --cream:       #F4F1EC;
-      --green:       #4A7C59;
-      --green-light: #8FBF9F;
-      --rose:        #C4616A;
-      --rose-light:  #E8A5A8;
-      --gold:        #C9A84C;
+      --green:       #1a3a28;
+      --green-light: #2D5C3F;
+      --rose:        #8B3A42;
+      --rose-light:  #A85460;
+      --gold:        #9D7C2B;
       --text:        #1A1A18;
-      --text-muted:  #6B6B65;
+      --text-muted:  #4A4A42;
       --white:       #FFFFFF;
       --container:   1200px;
     }
@@ -255,7 +255,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background: linear-gradient(135deg, rgba(244,241,236,0.85) 0%, rgba(244,241,236,0.75) 50%, rgba(26,26,24,0.3) 100%), url('https://i.imgur.com/DO3CqJq.png') center/cover no-repeat;
+      background: linear-gradient(135deg, rgba(244,241,236,0.92) 0%, rgba(244,241,236,0.85) 50%, rgba(26,26,24,0.4) 100%), url('https://i.imgur.com/DO3CqJq.png') center/cover no-repeat;
       background-attachment: fixed;
       padding-top: 0;
       padding-bottom: 0;
@@ -266,7 +266,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(244,241,236,0.15);
+      background: rgba(244,241,236,0.25);
       pointer-events: none;
     }
 
@@ -306,12 +306,14 @@
     }
 
     .hero-headline {
-      font-size: clamp(3.2rem, 7.5vw, 6.8rem);
+      font-size: clamp(3.6rem, 8.5vw, 7.8rem);
       font-weight: 900;
-      line-height: 1.0;
+      line-height: 0.95;
       color: var(--text);
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
       margin-bottom: 28px;
+      text-transform: uppercase;
+      font-style: italic;
     }
     .hero-headline em {
       font-style: italic;
@@ -588,12 +590,13 @@
     }
 
     .section-title {
-      font-size: clamp(2rem, 4.5vw, 3.4rem);
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -0.01em;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
       margin-bottom: 64px;
       max-width: 700px;
+      text-transform: uppercase;
     }
 
     .differentiateurs {
