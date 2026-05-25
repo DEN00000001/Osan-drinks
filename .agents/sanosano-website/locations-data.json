@@ -1,0 +1,158 @@
+{
+  "locations": [
+    {
+      "id": "sanosano-online",
+      "name": "SANO SANO Shop",
+      "type": "online",
+      "address": "sanosanodrinks.com",
+      "description": "Livraison rapide en Belgique — 24h/24",
+      "phone": "hello@sanosanodrinks.com",
+      "lat": 50.5038,
+      "lng": 4.4699,
+      "url": "https://sanosanodrinks.com",
+      "hours": "Commande 24/7",
+      "delivery": "2-3 jours (gratuit dès 50€)"
+    },
+    {
+      "id": "foster-farm-wavre",
+      "name": "Foster Farm — SANO SANO",
+      "type": "boutique",
+      "address": "ch. de Vieusart 35, 1300 Wavre, Belgique",
+      "description": "Vente directe à la source — Visite sur RDV",
+      "phone": "+32 2 XXX XXXX",
+      "email": "jerome@osandrinks.com",
+      "lat": 50.7167,
+      "lng": 4.6167,
+      "url": "https://foster-farm.be",
+      "hours": "Sur rendez-vous",
+      "notes": "Première Slow Food Farm de Belgique"
+    },
+    {
+      "id": "caviste-bruxelles-01",
+      "name": "La Caviste du Coin",
+      "type": "boutique",
+      "address": "123 Rue de Namur, 1000 Bruxelles",
+      "description": "Caviste spécialisée — Conseil en vin & sans-alcool premium",
+      "phone": "+32 2 512 34 56",
+      "lat": 50.4501,
+      "lng": 4.4699,
+      "url": "https://caviste-coin.be",
+      "hours": "Lun-Ven 10h-19h, Sam 11h-18h",
+      "notes": "Conseil expert en accords"
+    },
+    {
+      "id": "epicerie-fine-bruxelles-01",
+      "name": "L'Épicerie Fine du Sablon",
+      "type": "boutique",
+      "address": "Place du Sablon, 1000 Bruxelles",
+      "description": "Épicerie fine premium — Sélection gastronomique",
+      "phone": "+32 2 XXX XXXX",
+      "lat": 50.4261,
+      "lng": 4.4819,
+      "url": "https://epicerie-sablon.be",
+      "hours": "Lun-Dim 10h-20h",
+      "notes": "Quartier gastronomique de Bruxelles"
+    },
+    {
+      "id": "magasin-bio-brussels-01",
+      "name": "Bio & Naturel — Brussels",
+      "type": "boutique",
+      "address": "45 Chaussée de Wavre, 1050 Bruxelles",
+      "description": "Magasin bio — Produits premium & organiques",
+      "phone": "+32 2 XXX XXXX",
+      "lat": 50.4801,
+      "lng": 4.4299,
+      "url": "https://bio-naturel.be",
+      "hours": "Lun-Sam 9h-19h",
+      "notes": "Label Belgisch Bio"
+    },
+    {
+      "id": "air-du-temps-wavre",
+      "name": "L'Air du Temps — Wavre",
+      "type": "horeca",
+      "address": "Rue de Froidchapelle, 1300 Wavre",
+      "description": "Restaurant 2 étoiles Michelin — Chef Sang Hoon Degeimbre",
+      "phone": "+32 10 34 34 34",
+      "lat": 50.7200,
+      "lng": 4.6150,
+      "url": "https://airdutems-wavre.be",
+      "hours": "Mar-Dim 12h-22h (fermé lun)",
+      "notes": "Créateur de SANO SANO — Accord mets-boissons"
+    },
+    {
+      "id": "restaurant-gastronomique-bruxelles-01",
+      "name": "Restaurant Gourmet — Bruxelles",
+      "type": "horeca",
+      "address": "Rue Royale, 1000 Bruxelles",
+      "description": "Restaurant gastronomique — Cuisine belge contemporaine",
+      "phone": "+32 2 XXX XXXX",
+      "lat": 50.4463,
+      "lng": 4.4699,
+      "url": "https://restaurant-gourmet.be",
+      "hours": "Mar-Dim 18h-23h",
+      "notes": "SANO SANO sur la carte — Accord sommelier"
+    },
+    {
+      "id": "hotel-bruxelles-01",
+      "name": "Hotel Prestige — Bruxelles",
+      "type": "horeca",
+      "address": "Avenue Louise, 1050 Bruxelles",
+      "description": "Hôtel 4-5 étoiles — Bar & restaurant",
+      "phone": "+32 2 XXX XXXX",
+      "lat": 50.4315,
+      "lng": 4.4481,
+      "url": "https://hotel-prestige.be",
+      "hours": "24/7 (room service)",
+      "notes": "Offre complète SANO SANO à la carte"
+    },
+    {
+      "id": "bar-vin-bruxelles-01",
+      "name": "Bar à Vin Moderne — Bruxelles",
+      "type": "horeca",
+      "address": "Rue Thonier, 1000 Bruxelles",
+      "description": "Wine Bar contemporain — Accord sans-alcool premium",
+      "phone": "+32 2 XXX XXXX",
+      "lat": 50.4532,
+      "lng": 4.4699,
+      "url": "https://bar-vin-moderne.be",
+      "hours": "Lun-Dim 17h-23h",
+      "notes": "Spécialiste accords vin & SANO SANO"
+    },
+    {
+      "id": "chocolaterie-marcolini",
+      "name": "Pierre Marcolini — Bruxelles",
+      "type": "horeca",
+      "address": "Rue de Namur, 1000 Bruxelles",
+      "description": "Salon de chocolat — Dégustation premium",
+      "phone": "+32 2 XXX XXXX",
+      "lat": 50.4485,
+      "lng": 4.4699,
+      "url": "https://marcolini.be",
+      "hours": "Lun-Dim 11h-19h",
+      "notes": "Accord SANO SANO & chocolat — Partenaire fondateur"
+    },
+    {
+      "id": "traiteur-bruxelles-01",
+      "name": "Traiteur Gourmet Events",
+      "type": "horeca",
+      "address": "Chaussée de Wavre, 1050 Bruxelles",
+      "description": "Traiteur — Événements & réceptions haut de gamme",
+      "phone": "+32 2 XXX XXXX",
+      "lat": 50.4801,
+      "lng": 4.4299,
+      "url": "https://traiteur-gourmet.be",
+      "hours": "Lun-Ven 9h-18h (events 24h)",
+      "notes": "SANO SANO pour réceptions sans alcool"
+    }
+  ],
+  "_meta": {
+    "lastUpdated": "2026-05-25",
+    "totalLocations": 11,
+    "regions": {
+      "online": 1,
+      "boutique": 4,
+      "horeca": 6
+    },
+    "notes": "À compléter avec les vraies données des points de vente. Ajouter/retirer selon disponibilités."
+  }
+}
