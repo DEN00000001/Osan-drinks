@@ -125,7 +125,33 @@ Quand chacun lève son verre — sans exclusion.
 
 ---
 
-### SECTION 8 — Final CTA
+### SECTION 8 — Où acheter (Map interactive)
+
+**Header :**
+## SANO SANO près de chez toi.
+
+**Sous-titre :**
+En ligne, en boutique, ou dans tes restaurants préférés. Choisis ton mode de vie.
+
+**[MAP INTERACTIVE - Google Maps / Mapbox]**
+
+**Points de vente – Choisis ta manière d'acheter :**
+
+| 🏪 **En ligne** | 🍇 **En boutique** | 🍽️ **En restaurant** |
+|---|---|---|
+| sanosanodrinks.com<br>Livraison rapide | Cavistes sélectionnés<br>Épiceries fines<br>Magasins bio | Restaurants partenaires<br>Hôtels<br>Bars à vin<br>Traiteurs |
+
+**Filtre la map par type :**
+- [x] En ligne
+- [x] Points de vente physiques  
+- [x] Restaurants/HoReCa
+
+**Ou cherche par code postal :**
+`[Champ de saisie CP]` → `Chercher à proximité`
+
+---
+
+### SECTION 9 — Final CTA
 
 **Header :**
 ## Prêt à célébrer autrement ?
@@ -133,7 +159,10 @@ Quand chacun lève son verre — sans exclusion.
 **Body :**
 75 cl. Bouchon liège. Muselet. À partir de 9,90 €.
 
-`Commander la découverte →`
+**CTAs :**
+- `🗺️ Trouver près de chez moi` (scroll to map)
+- `📦 Commander en ligne — 9,90 €` (vers boutique)
+- `🎁 Pack découverte (2 bouteilles) — 18,90 €`
 
 **Reassurance :** Livraison gratuite en Belgique dès 50 € · Paiement sécurisé · Conservé bio
 
