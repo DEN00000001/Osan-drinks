@@ -48,7 +48,7 @@ Le verre qu'on lève, la bulle qu'on partage, le moment qu'on crée ensemble —
 ### SECTION 4 — Les produits (Products)
 
 **Header :**
-## Deux bulles. Deux mondes.
+## Deux caractères. Une même exigence.
 
 **Produit 1 — Bulles Blanches**
 ### Basilic × Gingembre
@@ -67,6 +67,11 @@ La verdeur du basilic en attaque, la chaleur du gingembre en finale. Extra brut,
 Le thym ouvre la dégustation. La fraise l'arrondit. Une composition complexe, ronde, légèrement fruitée.
 
 `Découvrir Thym – Fraise →`
+
+---
+
+**CTA Section :**
+`Choisissez votre bulle. Ou les deux. →`
 
 ---
 
