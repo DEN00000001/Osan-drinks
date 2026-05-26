@@ -90,9 +90,9 @@ Le thym ouvre la dégustation. La fraise l'arrondit. Une composition complexe, r
 ## La plante. Rien que la plante.
 
 **Body :**
-Nous sélectionnons des plantes fraîches à leur apogée aromatique. Un procédé artisanal respectueux capte leur essence intacte. Une filtration délicate la préserve jusqu'à votre verre.
+Nous sélectionnons des plantes fraîches à leur apogée aromatique. Une dynamisation délicate en capte l'essence intacte — sans chaleur, sans altération. Une filtration respectueuse préserve cette pureté jusqu'à votre verre.
 
-Le résultat : la pureté d'une plante qui vient d'être cueillie, vivante en bulles.
+Le résultat : la plante entière, exprimée en bulles.
 
 `Voir comment c'est fait →`
 
@@ -365,7 +365,7 @@ Le reste — bulle fine, structure extra brute, finale longue — c'est l'écho 
 
 Foster Farm, aux portes de Bruxelles. Première **Slow Food Farm** de Belgique. Un écosystème agricole régénératif, alimenté à l'énergie verte, à l'eau de source.
 
-Chaque lot est tracé, certifié bio. Chaque plante est cueillie au plus près, à son apogée. Production artisanale, à petite échelle, pour préserver l'intégrité aromatique.
+Chaque lot est tracé, certifié bio. Chaque plante est cueillie à son apogée, dynamisée avec respect, puis mise en bulles. Travail artisanal, à petite échelle, pour honorer chaque arôme.
 
 Ce n'est pas une usine. C'est un jardin productif.
 
