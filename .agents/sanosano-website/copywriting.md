@@ -108,7 +108,7 @@ Aux portes de Bruxelles, un écosystème agricole régénératif. Eau de source.
 
 Une promesse simple : respect du vivant, valorisation des plantes, naturalité absolue.
 
-**Logos de validation** : Bio Garantie Belgique · FR-BIO-01 · Slow Food
+**Logos de validation** : Bio Garantie Belgique · FR-BIO-01 · Slow Food · Halal
 
 ---
 
@@ -155,7 +155,7 @@ Cavistes sélectionnés · Épiceries fines · Magasins bio
 ## Prêt à célébrer autrement ?
 
 **Body :**
-75 cl. Bouchon liège. Muselet. À partir de 9,90 €.
+75 cl. Bouchon liège. Muselet.
 
 **CTAs :**
 - `🗺️ Trouver près de chez moi` (scroll to map)
@@ -226,7 +226,7 @@ Eau · Basilic* · Miel d'acacia* · Gingembre* · Acide ascorbique · Acide cit
 |---------|----------|--------|-----|--------|
 | 29 kJ / 7 kcal | 0,9 g | 1,5 g | 0,01 g | **0,00 %** |
 
-✓ Sans gluten · Sans sulfites · Bio · Végétarien
+✓ Sans gluten · Sans sulfites · Bio · Végétarien · Halal
 
 ---
 
@@ -466,8 +466,6 @@ Découvrez nos distributeurs — cavistes, épiceries fines, magasins bio qui pr
 
 ### SECTION — Les deux bulles
 
-**9,90 € la bouteille 75 cl**
-
 **Bulles Blanches — Basilic × Gingembre**
 75 cl · 6 verres · 0,00 % alcool
 
@@ -577,7 +575,7 @@ Particulier, professionnel, presse — choisissez votre canal.
 ### SECTION — Trois canaux
 
 **Card 1 — Particuliers**
-📦 Commandes, livraisons, SANO Club
+🍾 Questions produit, points de vente, conseils dégustation
 *hello@sanosanodrinks.com*
 
 **Card 2 — Professionnels**
@@ -609,11 +607,11 @@ Foster Farm — ch. de Vieusart 35
 
 ### Page Bulles Blanches
 **Title :** `SANO SANO Basilic × Gingembre — Bulles blanches sans alcool bio`
-**Meta :** `Bulles blanches dynamisées au basilic et gingembre bio. 0,00 % alcool, extra brut, 7 kcal/100ml. Pour célébrer sans compromis. 9,90 €.`
+**Meta :** `Bulles blanches dynamisées au basilic et gingembre bio. 0,00 % alcool, extra brut, 7 kcal/100ml. Pour célébrer sans compromis. Disponible en caviste et épicerie fine.`
 
 ### Page Bulles Rosées
 **Title :** `SANO SANO Thym × Fraise — Bulles rosées sans alcool bio`
-**Meta :** `Bulles rosées dynamisées au thym et à la fraise bio. 0,00 % alcool, extra brut, 8 kcal/100ml. Désaltérantes, surprenantes. 9,90 €.`
+**Meta :** `Bulles rosées dynamisées au thym et à la fraise bio. 0,00 % alcool, extra brut, 8 kcal/100ml. Désaltérantes, surprenantes. Disponible en caviste et épicerie fine.`
 
 ### Notre Histoire
 **Title :** `Notre histoire — SANO SANO, née à Foster Farm, Belgique`
@@ -623,9 +621,9 @@ Foster Farm — ch. de Vieusart 35
 **Title :** `La dynamisation — Notre procédé exclusif sans fermentation`
 **Meta :** `Découvrez la dynamisation : infusion ultrasonique de plantes fraîches bio, sans fermentation, sans alcool, sans arômes ajoutés. La signature SANO SANO.`
 
-### Boutique
-**Title :** `Boutique SANO SANO — Bulles botaniques bio · Livraison Belgique`
-**Meta :** `Commandez les bulles SANO SANO en ligne. Bouteille 9,90 €, pack découverte 18,90 €, abonnement SANO Club. Livraison gratuite dès 50 €.`
+### Où trouver
+**Title :** `Où trouver SANO SANO — Cavistes, épiceries fines et magasins bio`
+**Meta :** `Découvrez nos distributeurs partenaires en Belgique et en France. Cavistes, épiceries fines, magasins bio — trouvez le point de vente le plus proche.`
 
 ### B2B
 **Title :** `SANO SANO Pro — Bulles sans alcool pour restaurants & cavistes`
@@ -656,7 +654,7 @@ Foster Farm — ch. de Vieusart 35
 - Pas de mise en scène "fête bruyante", on est plus *dîner sur la terrasse*
 
 ### Hierarchy CTA
-1. **CTA #1** — `Commander` / `Découvrir`
+1. **CTA #1** — `Trouver près de chez moi` / `Découvrir`
 2. **CTA #2** — `Voir le procédé` / `En savoir plus`
 3. **CTA #3** (B2B/secondary) — `Demander un échantillon`
 
@@ -665,7 +663,7 @@ Foster Farm — ch. de Vieusart 35
 ## 🚀 PROCHAINES ÉTAPES SUGGÉRÉES
 
 1. **A/B tester les 3 headlines** de la homepage (skill `ab-test-setup`)
-2. **Créer la séquence email post-achat** (skill `email-sequence`) — 5 emails pour transformer 1ère commande en abonné SANO Club
-3. **Optimiser le checkout** (skill `signup-flow-cro` / `page-cro`)
+2. **Créer la séquence email B2B** (skill `email-sequence`) — onboarding cavistes / épiceries après demande d'échantillon
+3. **Optimiser le formulaire de demande d'échantillon B2B** (skill `form-cro`)
 4. **Générer les visuels** (avec le MCP Higgsfield — `generate_image`)
-5. **Créer le brief sommellerie B2B** (PDF/PLV pour restaurants)
+5. **Créer le brief sommellerie B2B** (PDF/PLV pour distributeurs)

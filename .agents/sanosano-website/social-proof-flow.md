@@ -61,7 +61,10 @@ Le social proof de SANO SANO doit refléter le positionnement **gastronomique et
 **Format :** Ligne horizontale de badges discrets
 
 **Badges à afficher :**
-- Certifié Bio (Eurofeuille)
+- Certifié Bio (Eurofeuille / FR-BIO-01)
+- Bio Garantie Belgique
+- Slow Food
+- Halal
 - Made in Belgium
 - Sans alcool — Sans fermentation
 - [Prix futur — Concours Gastronomique XX]
