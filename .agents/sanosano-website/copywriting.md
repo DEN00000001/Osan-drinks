@@ -483,83 +483,6 @@ Cherche près de chez toi parmi nos cavistes, épiceries fines et magasins bio p
 ---
 ---
 
-## 🍽️ PAGE — B2B (HORECA / PROFESSIONNELS)
-
-### HERO
-
-**Headline :**
-# Pour les tables qui n'oublient personne.
-
-**Subheadline :**
-Restaurants étoilés, hôtels, traiteurs, cavistes — ajoutez à votre carte la première bulle botanique dynamisée. Un choix qui respecte tous vos clients, sans compromis sur le standing.
-
-**CTA :** `Demander un échantillon →`
-
----
-
-### SECTION — Pourquoi SANO SANO sur votre carte
-
-**3 colonnes :**
-
-🍾 **Une vraie offre sans alcool**
-Plus jamais "un jus d'orange ou une eau pétillante" pour vos clients qui ne boivent pas. Une bouteille qui se sert à la flûte, comme un grand cru.
-
-📈 **Un segment en croissance**
-+30% / an sur le sans alcool premium. Femmes enceintes, sober curious, conducteurs désignés — un public qui dépense, et qui revient.
-
-🌟 **Une promesse cohérente**
-Bio, artisanal, belge, traçable. Un produit aligné avec les valeurs de vos clients exigeants.
-
----
-
-### SECTION — Conditions pro
-
-**Header :**
-## Travailler avec nous.
-
-| Format | Carton | Prix HT | Disponibilité |
-|--------|--------|---------|--------------|
-| 75 cl bouteille | 6 / carton | Sur demande | Stock permanent |
-| 75 cl bouteille | 12 / carton | Sur demande | Stock permanent |
-
-**Marges pro · Formation sommellerie · PLV offerte · Livraison Belgique + France**
-
----
-
-### SECTION — Ils nous servent
-
-**Header :**
-## Déjà sur les cartes de…
-
-*[Logos restaurants partenaires — à compléter]*
-
-> *"Enfin une bulle sans alcool que je n'ai pas honte de proposer en accord avec mes plats."*
-> — Sommelier partenaire, restaurant étoilé
-
----
-
-### CTA FINAL
-
-**Header :**
-## Recevez un échantillon gratuit.
-
-**Body :**
-Une bouteille de chaque variété, livrée à votre établissement, pour la déguster en équipe.
-
-**Formulaire court :**
-- Nom de l'établissement
-- Type d'établissement (restaurant, hôtel, caviste, traiteur, autre)
-- Adresse de livraison
-- Email professionnel
-
-`Recevoir mes échantillons →`
-
-**Ou contactez :**
-**Jérôme Goffinet** — +32 475 95 46 33 — jerome@osandrinks.com
-
----
----
-
 ## 📩 PAGE — CONTACT
 
 ### HERO
@@ -568,7 +491,7 @@ Une bouteille de chaque variété, livrée à votre établissement, pour la dég
 # Une question ? On répond.
 
 **Subheadline :**
-Particulier, professionnel, presse — choisissez votre canal.
+Particulier, distributeur, presse — choisissez votre canal.
 
 ---
 
@@ -578,8 +501,8 @@ Particulier, professionnel, presse — choisissez votre canal.
 🍾 Questions produit, points de vente, conseils dégustation
 *hello@sanosanodrinks.com*
 
-**Card 2 — Professionnels**
-🏨 HoReCa, cavistes, distribution
+**Card 2 — Distributeurs**
+🍇 Cavistes, épiceries fines, magasins bio — devenir distributeur
 **Jérôme Goffinet**
 +32 475 95 46 33
 jerome@osandrinks.com
@@ -625,9 +548,9 @@ Foster Farm — ch. de Vieusart 35
 **Title :** `Où trouver SANO SANO — Cavistes, épiceries fines et magasins bio`
 **Meta :** `Découvrez nos distributeurs partenaires en Belgique et en France. Cavistes, épiceries fines, magasins bio — trouvez le point de vente le plus proche.`
 
-### B2B
-**Title :** `SANO SANO Pro — Bulles sans alcool pour restaurants & cavistes`
-**Meta :** `Ajoutez SANO SANO à votre carte. Bulles botaniques 0,00 % alcool pour restaurants, hôtels, cavistes, traiteurs. Échantillon gratuit sur demande.`
+### Contact
+**Title :** `Contact SANO SANO — Particuliers, distributeurs, presse`
+**Meta :** `Une question sur nos bulles botaniques ? Contactez-nous. Particuliers, cavistes, épiceries, magasins bio et presse — un canal dédié pour chacun.`
 
 ---
 ---
@@ -656,14 +579,14 @@ Foster Farm — ch. de Vieusart 35
 ### Hierarchy CTA
 1. **CTA #1** — `Trouver près de chez moi` / `Découvrir`
 2. **CTA #2** — `Voir le procédé` / `En savoir plus`
-3. **CTA #3** (B2B/secondary) — `Demander un échantillon`
+3. **CTA #3** (secondaire) — `Nous contacter`
 
 ---
 
 ## 🚀 PROCHAINES ÉTAPES SUGGÉRÉES
 
 1. **A/B tester les 3 headlines** de la homepage (skill `ab-test-setup`)
-2. **Créer la séquence email B2B** (skill `email-sequence`) — onboarding cavistes / épiceries après demande d'échantillon
-3. **Optimiser le formulaire de demande d'échantillon B2B** (skill `form-cro`)
+2. **Créer la séquence email distributeurs** (skill `email-sequence`) — onboarding cavistes / épiceries fines après prise de contact
+3. **Optimiser le formulaire de contact distributeur** (skill `form-cro`)
 4. **Générer les visuels** (avec le MCP Higgsfield — `generate_image`)
-5. **Créer le brief sommellerie B2B** (PDF/PLV pour distributeurs)
+5. **Créer le brief de prescription** (PDF/PLV pour cavistes & sommeliers)

@@ -178,19 +178,7 @@ Le social proof de SANO SANO doit refléter le positionnement **gastronomique et
 
 ---
 
-## 9. Page B2B — Logos distributeurs
-
-**Placement :** Sur la page B2B, sous la section "Pourquoi rejoindre SANO SANO"
-**Format :** Mur de logos des cavistes/épiceries partenaires
-
-**Intro :**
-> Ils nous font déjà confiance
-
-**Bénéfice :** Effet boule de neige — un caviste hésitant voit ses confrères déjà engagés.
-
----
-
-## 10. Footer — Mention presse
+## 9. Footer — Mention presse
 
 **Placement :** Footer, ligne au-dessus des mentions légales
 **Format :** Texte petit, italique
@@ -216,8 +204,7 @@ Le social proof de SANO SANO doit refléter le positionnement **gastronomique et
 
 **Phase 3 — Après traction (mois 3+) :**
 - [1] Bandeau presse (quand retombées effectives)
-- [9] Logos distributeurs
-- [10] Footer presse
+- [9] Footer presse
 - [7] Notifications (à tester)
 
 ---
