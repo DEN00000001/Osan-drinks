@@ -15,17 +15,17 @@
 # Festif par nature.
 
 **Subheadline :**
-Parce que trinquer, ça s'améliore. SANO SANO, c'est la bulle botanique pour adultes — 00,00 % d'alcool, jamais fermentée, dynamisée à partir de plantes fraîches.
+Basilic vif, gingembre qui claque, thym sauvage, fraise de saison — chaque gorgée, une architecture. La boisson botanique pétillante créée pour ceux qui mangent bien et boivent mieux.
 
 ---
 
-### SECTION 2 — Le constat (Problem/Pain)
+### SECTION 2 — Le goût (Pleasure/USP)
 
 **Header :**
-## Le rituel est pour tout le monde.
+## Le goût, enfin pris au sérieux.
 
 **Body :**
-Le verre qu'on lève, la bulle qu'on partage, le moment qu'on crée ensemble — ça n'a jamais dépendu de ce qu'il y avait dedans. Sauf qu'on n'avait pas encore SANO SANO.
+Certaines boissons se boivent. Celle-là se goûte. La bulle qui titille, le basilic qui s'ouvre sur le gingembre, la fraise qui fond sous le thym — une complexité aromatique qui n'a rien à envier à la carte des vins. Pensée par un chef : ça se sent à la première gorgée.
 
 ---
 
@@ -39,9 +39,9 @@ Le verre qu'on lève, la bulle qu'on partage, le moment qu'on crée ensemble —
 
 **Bénéfices (4 colonnes) :**
 
-| 🌿 **100% botanique** | 💧 **00,00 % alcool** | 🔬 **Jamais fermentée** | ⚡ **< 6 kcal / 100ml** |
+| 🌿 **Complexité aromatique** | 🔬 **Dynamisée par ultrasons** | 💧 **Jamais fermentée** | ⚡ **< 6 kcal / 100ml** |
 |---|---|---|---|
-| Plantes fraîches, biologiques, dynamisées à leur apogée. Aucun arôme ajouté. | Pas "presque". Pas "low". Zéro absolu, vérifié. | Notre procédé exclusif extrait le goût sans fermentation. | Indice glycémique bas. Léger comme une eau, complexe comme un grand vin. |
+| Deux assemblages botaniques développés comme des accords de cuisine. Pas une saveur, une séquence. | Pour que chaque plante exprime son caractère jusqu'en fond de verre. Aucun arôme ajouté. | Aucun compromis aromatique. La pureté botanique, intacte. 00,00 % absolu. | Parce qu'un grand goût n'a pas à peser lourd. |
 
 ---
 
