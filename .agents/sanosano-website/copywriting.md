@@ -12,18 +12,10 @@
 ### HERO (Above the fold)
 
 **Headline :**
-# Célébrez. Sans une goutte.
+# Festif par nature.
 
 **Subheadline :**
-SANO SANO, c'est la bulle botanique pour adultes — 00,00 % d'alcool, jamais fermentée, dynamisée à partir de plantes fraîches. Une nouvelle catégorie pour les moments qui comptent.
-
-**CTA Primaire :** `Découvrir nos bulles →`
-**CTA Secondaire :** `Voir le procédé`
-
-> **Alternatives Headlines (à A/B tester) :**
-> - **Option A** — *"Célébrez. Sans une goutte."* (3 mots, élégant, surprend par sa concision)
-> - **Option B** — *"Les bulles. Sans le reste."* (oppose le festif au superflu — alcool, sucre, calories)
-> - **Option C** — *"Zéro compromis. 100% festif."* (la baseline officielle, déjà reconnaissable)
+Parce que trinquer, ça s'améliore. SANO SANO, c'est la bulle botanique pour adultes — 00,00 % d'alcool, jamais fermentée, dynamisée à partir de plantes fraîches.
 
 ---
 
