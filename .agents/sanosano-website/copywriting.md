@@ -19,10 +19,16 @@ Basilic vif, gingembre qui claque, thym sauvage, fraise de saison — chaque gor
 
 ---
 
+### SECTION 1.5 — Les principes
+
+**Zero alcool. Jamais fermenté. Botanique frais et low calories.**
+
+---
+
 ### SECTION 2 — Le goût (Pleasure/USP)
 
 **Header :**
-## Le goût, enfin pris au sérieux.
+## Trinquer, c'est un rituel. Pas une obligation de boire.
 
 **Body :**
 Certaines boissons se boivent. Celle-là se goûte. La bulle qui titille, le basilic qui s'ouvre sur le gingembre, la fraise qui fond sous le thym — une complexité aromatique qui n'a rien à envier à la carte des vins. Pensée par un chef : ça se sent à la première gorgée.
@@ -39,16 +45,16 @@ Certaines boissons se boivent. Celle-là se goûte. La bulle qui titille, le bas
 
 **Bénéfices (4 colonnes) :**
 
-| 🌿 **Complexité aromatique** | 🔬 **Dynamisée par ultrasons** | 💧 **Jamais fermentée** | ⚡ **< 6 kcal / 100ml** |
+| 🌿 **Complexité aromatique** | 🔬 **Dynamisée** | 💧 **Jamais fermentée** | ⚡ **Low Calories** |
 |---|---|---|---|
-| Deux assemblages botaniques développés comme des accords de cuisine. Pas une saveur, une séquence. | Pour que chaque plante exprime son caractère jusqu'en fond de verre. Aucun arôme ajouté. | Aucun compromis aromatique. La pureté botanique, intacte. 00,00 % absolu. | Parce qu'un grand goût n'a pas à peser lourd. |
+| Deux assemblages botaniques développés comme des accords de cuisine. Pas une saveur, une séquence. | Pour que chaque plante exprime son caractère jusqu'en fond de verre. Aucun arôme ajouté. | Aucun compromis aromatique. La pureté botanique, intacte. 0,00 % absolu. | Parce qu'un grand goût n'a pas à peser lourd. |
 
 ---
 
 ### SECTION 4 — Les produits (Products)
 
 **Header :**
-## Deux caractères. Une même exigence.
+## Deux bulles, Deux caracteres.
 
 **Produit 1 — Bulles Blanches**
 ### Basilic × Gingembre
@@ -78,15 +84,15 @@ Le thym ouvre la dégustation. La fraise l'arrondit. Une composition complexe, r
 ### SECTION 5 — Le procédé (Trust & Differentiation)
 
 **Header :**
-## Infusé par ultrasons. Jamais chauffé. Jamais fermenté.
+## Une bulle pensée comme un grand effervescent. Sans alcool. Sans fermentation. Sans compromis.
 
 **Sous-header :**
 ## La plante. Rien que la plante.
 
 **Body :**
-Nous sélectionnons des plantes fraîches à leur apogée. Une infusion ultrasonique capte leur quintessence aromatique. Une filtration délicate la préserve.
+Nous sélectionnons des plantes fraîches à leur apogée aromatique. Un procédé artisanal respectueux capte leur essence intacte. Une filtration délicate la préserve jusqu'à votre verre.
 
-Le résultat : la pureté d'une plante qui vient d'être cueillie, mise en bulles.
+Le résultat : la pureté d'une plante qui vient d'être cueillie, vivante en bulles.
 
 `Voir comment c'est fait →`
 
@@ -176,7 +182,7 @@ En ligne, en boutique, ou dans tes restaurants préférés. Choisis ton mode de 
 # Basilic × Gingembre.<br>L'attaque verte, la finale chaude.
 
 **Subheadline :**
-Bulles blanches. Extra brut. 00,00 % alcool. La verdeur du basilic relevée par la tension épicée du gingembre — pour un apéritif vivant, tendu, mémorable.
+Bulles blanches. Extra brut. 0,00 % alcool. La verdeur du basilic relevée par la tension épicée du gingembre — pour un apéritif vivant, tendu, mémorable.
 
 **Image :** Bouteille en gros plan, verre servi à côté, herbes fraîches en arrière-plan.
 
@@ -226,7 +232,7 @@ Eau · Basilic* · Miel d'acacia* · Gingembre* · Acide ascorbique · Acide cit
 **Valeurs nutritionnelles (100ml) :**
 | Énergie | Glucides | Sucres | Sel | Alcool |
 |---------|----------|--------|-----|--------|
-| 19 kJ / 4 kcal | 0,9 g | 1,5 g | 0,01 g | **00,00 %** |
+| 29 kJ / 7 kcal | 0,9 g | 1,5 g | 0,01 g | **0,00 %** |
 
 ✓ Sans gluten · Sans sulfites · Bio · Végétarien
 
@@ -250,7 +256,7 @@ Eau · Basilic* · Miel d'acacia* · Gingembre* · Acide ascorbique · Acide cit
 # Thym × Fraise.<br>L'herbe ouvre, le fruit referme.
 
 **Subheadline :**
-Bulles rosées. Extra brut. 00,00 % alcool. La note herbacée du thym, arrondie par la douceur acidulée de la fraise — une rondeur sèche, surprenante, désaltérante.
+Bulles rosées. Extra brut. 0,00 % alcool. La note herbacée du thym, arrondie par la douceur acidulée de la fraise — une rondeur sèche, surprenante, désaltérante.
 
 **Image :** Bouteille rose pâle, verre servi, thym et fraises fraîches.
 
@@ -297,7 +303,7 @@ Eau · Fraise* · Framboise* · Miel d'acacia* · Thym* · Acide ascorbique · A
 **Valeurs nutritionnelles (100ml) :**
 | Énergie | Glucides | Sucres | Sel | Alcool |
 |---------|----------|--------|-----|--------|
-| 19 kJ / 4 kcal | 0,9 g | 1,5 g | 0,01 g | **00,00 %** |
+| 33 kJ / 8 kcal | 0,9 g | 1,5 g | 0,01 g | **0,00 %** |
 
 ---
 
@@ -361,7 +367,7 @@ Le reste — bulle fine, structure extra brute, finale longue — c'est l'écho 
 
 Foster Farm, aux portes de Bruxelles. Première **Slow Food Farm** de Belgique. Un écosystème agricole régénératif, alimenté à l'énergie verte, à l'eau de source.
 
-Nous y dynamisons chaque bouteille à la main. Chaque lot est tracé, certifié bio. Chaque plante est cueillie au plus près.
+Chaque lot est tracé, certifié bio. Chaque plante est cueillie au plus près, à son apogée. Production artisanale, à petite échelle, pour préserver l'intégrité aromatique.
 
 Ce n'est pas une usine. C'est un jardin productif.
 
@@ -425,11 +431,11 @@ Une filtration douce préserve la finesse aromatique tout en garantissant la pur
 
 | | **SANO SANO** | Vins désalcoolisés | Soft drinks premium | Kombucha |
 |---|---|---|---|---|
-| Alcool | **00,00 %** | 0,3 - 0,5 % résiduel | 0 % | Trace (~0,5 %) |
+| Alcool | **0,00 %** | 0,3 - 0,5 % résiduel | 0 % | Trace (~0,5 %) |
 | Fermentation | **Jamais** | Oui puis désalcoolisé | Souvent | Oui |
 | Arômes | **Plantes fraîches uniquement** | Souvent ajoutés post-désalcoolisation | Concentrés / sirops | Naturels mais acides |
 | Sucres | **1,5 g / 100ml** | 4-12 g / 100ml | 8-12 g / 100ml | 2-5 g / 100ml |
-| Calories | **< 6 kcal** | 20-50 kcal | 30-50 kcal | 15-25 kcal |
+| Calories | **7-8 kcal** | 20-50 kcal | 30-50 kcal | 15-25 kcal |
 | Bio | **100 %** | Variable | Variable | Variable |
 
 ---
@@ -472,13 +478,13 @@ Bouteille à l'unité, pack découverte, ou abonnement SANO Club — pour toujou
 
 **Carte 1 :**
 **Bulles Blanches — Basilic × Gingembre**
-75 cl · 6 verres · 00,00 % alcool
+75 cl · 6 verres · 0,00 % alcool
 **9,90 €**
 `Ajouter au panier`
 
 **Carte 2 :**
 **Bulles Rosées — Thym × Fraise**
-75 cl · 6 verres · 00,00 % alcool
+75 cl · 6 verres · 0,00 % alcool
 **9,90 €**
 `Ajouter au panier`
 
@@ -632,16 +638,16 @@ Foster Farm — ch. de Vieusart 35
 ## 🔍 META CONTENT (SEO)
 
 ### Homepage
-**Title :** `SANO SANO — Bulles botaniques 00,00 % alcool · Bio · Belge`
-**Meta :** `Célébrez sans une goutte. SANO SANO, la première bulle botanique dynamisée — 00,00 % alcool, bio, < 6 kcal. Basilic-Gingembre & Thym-Fraise. Made in Belgium.`
+**Title :** `SANO SANO — Bulles botaniques 0,00 % alcool · Bio · Belge`
+**Meta :** `Célébrez sans une goutte. SANO SANO, la première bulle botanique dynamisée — 0,00 % alcool, bio, low calories. Basilic-Gingembre & Thym-Fraise. Made in Belgium.`
 
 ### Page Bulles Blanches
 **Title :** `SANO SANO Basilic × Gingembre — Bulles blanches sans alcool bio`
-**Meta :** `Bulles blanches dynamisées au basilic et gingembre bio. 00,00 % alcool, extra brut, < 6 kcal/100ml. Pour célébrer sans compromis. 9,90 €.`
+**Meta :** `Bulles blanches dynamisées au basilic et gingembre bio. 0,00 % alcool, extra brut, 7 kcal/100ml. Pour célébrer sans compromis. 9,90 €.`
 
 ### Page Bulles Rosées
 **Title :** `SANO SANO Thym × Fraise — Bulles rosées sans alcool bio`
-**Meta :** `Bulles rosées dynamisées au thym et à la fraise bio. 00,00 % alcool, extra brut, < 6 kcal/100ml. Désaltérantes, surprenantes. 9,90 €.`
+**Meta :** `Bulles rosées dynamisées au thym et à la fraise bio. 0,00 % alcool, extra brut, 8 kcal/100ml. Désaltérantes, surprenantes. 9,90 €.`
 
 ### Notre Histoire
 **Title :** `Notre histoire — SANO SANO, née à Foster Farm, Belgique`
@@ -657,7 +663,7 @@ Foster Farm — ch. de Vieusart 35
 
 ### B2B
 **Title :** `SANO SANO Pro — Bulles sans alcool pour restaurants & cavistes`
-**Meta :** `Ajoutez SANO SANO à votre carte. Bulles botaniques 00,00 % pour restaurants, hôtels, cavistes, traiteurs. Échantillon gratuit sur demande.`
+**Meta :** `Ajoutez SANO SANO à votre carte. Bulles botaniques 0,00 % alcool pour restaurants, hôtels, cavistes, traiteurs. Échantillon gratuit sur demande.`
 
 ---
 ---
@@ -671,7 +677,7 @@ Foster Farm — ch. de Vieusart 35
 - **Inclusif sans paternalisme** — on parle à des adultes qui ont déjà choisi
 
 ### Mots à utiliser systématiquement
-*célébrer · bulles · botanique · vivant · dynamisation · plantes fraîches · sans compromis · pur · vif · contemporain · adulte · conscient · 00,00 %*
+*célébrer · bulles · botanique · vivant · dynamisation · plantes fraîches · sans compromis · pur · vif · contemporain · adulte · conscient · 0,00 %*
 
 ### Mots à BANNIR
 *"sans alcool" (en hero) · "alternative" · "comme du champagne" · "substitut" · "healthy" · "detox" · "light" · "mocktail" · "fake" · "imitation"*
