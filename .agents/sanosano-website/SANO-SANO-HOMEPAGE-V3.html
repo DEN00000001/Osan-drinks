@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANO SANO — Homepage v3 (7 sections)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1A1A1A;
+            background: #FAF7F0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+        }
+
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: #1C3D2E; margin: 40px 0 20px 0; font-weight: 400; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: #1C3D2E; margin: 30px 0 15px 0; font-weight: 400; }
+        h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: #2D6A4F; margin: 25px 0 10px 0; font-weight: 400; }
+        h4 { font-size: 20px; color: #2D6A4F; margin: 20px 0 8px 0; font-weight: 600; }
+        p { margin: 12px 0; font-size: 16px; line-height: 1.7; }
+
+        .header {
+            border-bottom: 3px solid #1C3D2E;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #E8F5EE;
+        }
+        .section:last-child { border-bottom: none; }
+
+        .hero {
+            background: linear-gradient(180deg, #1C3D2E 0%, #2D6A4F 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px 8px 0 0;
+        }
+        .hero h2 { color: #FAF7F0; margin-top: 0; }
+        .hero p { color: #F2EDE4; font-size: 17px; }
+
+        .press-strip {
+            background: #FAF7F0;
+            padding: 16px 24px;
+            border-radius: 0 0 8px 8px;
+            text-align: center;
+            font-size: 13px;
+            color: #1C3D2E;
+            opacity: 0.85;
+            letter-spacing: 0.3px;
+        }
+        .press-strip em { color: #6B7C6E; margin-right: 8px; }
+
+        .cta {
+            display: inline-block;
+            background: #1C3D2E;
+            color: #FAF7F0;
+            padding: 12px 24px;
+            border-radius: 2px;
+            text-decoration: none;
+            margin: 8px 8px 8px 0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .cta-secondary { background: transparent; border: 1.5px solid #1C3D2E; color: #1C3D2E; }
+
+        .promise-pivot {
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            color: #1C3D2E;
+            padding: 20px 0;
+            margin: 20px 0;
+            border-top: 1px solid #E8F5EE;
+            border-bottom: 1px solid #E8F5EE;
+            font-style: italic;
+        }
+
+        .benefits { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .benefit { background: #FAF7F0; padding: 20px; border-radius: 8px; border-left: 3px solid #2D6A4F; }
+        .benefit strong { color: #2D6A4F; display: block; margin-bottom: 8px; }
+
+        .products { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
+        .product-card { background: #FAF7F0; padding: 24px; border-radius: 12px; border: 1px solid #E8F5EE; }
+        .product-card h4 { color: #1C3D2E; margin-top: 0; }
+        .product-card em { color: #6B7C6E; display: block; margin: 8px 0 12px 0; }
+
+        .reassurance {
+            background: #E8F5EE;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #2D6A4F;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* INSTAGRAM SCROLL */
+        .ig-scroll {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding: 10px 0 20px;
+            scroll-snap-type: x mandatory;
+        }
+        .ig-card {
+            flex: 0 0 200px;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #2D6A4F 0%, #1C3D2E 100%);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+            scroll-snap-align: start;
+            position: relative;
+        }
+        .ig-card::after {
+            content: '📷';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            opacity: 0.4;
+        }
+        .ig-handle {
+            display: inline-block;
+            background: #1C3D2E;
+            color: #FAF7F0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .cert-row {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid #E8F5EE;
+            text-align: center;
+        }
+        .cert-row p {
+            font-size: 13px;
+            color: #6B7C6E;
+        }
+        .cert-row strong { color: #1C3D2E; }
+
+        .recap-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .recap-table th, .recap-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #E8F5EE;
+        }
+        .recap-table th {
+            background: #1C3D2E;
+            color: white;
+            font-weight: 600;
+        }
+
+        @media print {
+            body { padding: 0; background: white; }
+            .container { max-width: 100%; padding: 40px; box-shadow: none; border-radius: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍾 SANO SANO</h1>
+            <p style="font-size: 18px; color: #2D6A4F; margin-top: 10px;">Homepage v3 — 7 sections</p>
+            <p style="font-size: 13px; color: #6B7C6E; margin-top: 15px;">Press bar intégré au Hero · Instagram après les produits · Structure resserrée pour le designer</p>
+        </div>
+
+        <!-- 1. HERO + PRESS -->
+        <div class="section">
+            <h3 style="margin-top: 0;">SECTION 1 — HERO (+ strip presse intégré)</h3>
+            <div class="hero">
+                <h2 style="color: white;">Festif par nature.</h2>
+                <p>Basilic vif, gingembre qui claque, thym sauvage, fraise de saison — chaque gorgée, une architecture. La boisson botanique pétillante créée pour ceux qui mangent bien et boivent mieux.</p>
+                <div style="margin-top: 20px;">
+                    <span class="cta">Découvrir nos bulles →</span>
+                    <span class="cta cta-secondary" style="border-color: #FAF7F0; color: #FAF7F0;">Voir le procédé</span>
+                </div>
+            </div>
+            <div class="press-strip">
+                <em>Ils en parlent —</em> Le Figaro Madame · Elle à Table · Vogue Paris · Gault &amp; Millau · M Le Magazine · Konbini Food
+            </div>
+        </div>
+
+        <!-- 2. LE GOÛT & LA PROMESSE -->
+        <div class="section">
+            <h3>SECTION 2 — Le goût &amp; la promesse</h3>
+            <h4>Trinquer, c'est un rituel. Pas une obligation de boire.</h4>
+            <p>Certaines boissons se boivent. Celle-là se goûte. La bulle qui titille, le basilic qui s'ouvre sur le gingembre, la fraise qui fond sous le thym — une complexité aromatique qui n'a rien à envier à la carte des vins.</p>
+            <p>Pensée par un chef : ça se sent à la première gorgée.</p>
+
+            <p class="promise-pivot">Zéro alcool. Jamais fermenté. Botanique frais. Low calories.</p>
+
+            <div class="benefits">
+                <div class="benefit"><strong>🌿 Complexité aromatique</strong>Deux assemblages botaniques développés comme des accords de cuisine. Pas une saveur, une séquence.</div>
+                <div class="benefit"><strong>🔬 Dynamisée</strong>Pour que chaque plante exprime son caractère jusqu'en fond de verre. Aucun arôme ajouté.</div>
+                <div class="benefit"><strong>💧 Jamais fermentée</strong>Aucun compromis aromatique. La pureté botanique, intacte. 0,00 % absolu.</div>
+                <div class="benefit"><strong>⚡ Low Calories</strong>Parce qu'un grand goût n'a pas à peser lourd.</div>
+            </div>
+        </div>
+
+        <!-- 3. LES PRODUITS -->
+        <div class="section">
+            <h3>SECTION 3 — Les produits</h3>
+            <h4>Deux bulles, Deux caracteres.</h4>
+            <div class="products">
+                <div class="product-card">
+                    <h4>Basilic × Gingembre</h4>
+                    <em>Frais, vibrant, tonique.</em>
+                    <p>La verdeur du basilic en attaque, la chaleur du gingembre en finale. Extra brut, élégant, parfaitement équilibré.</p>
+                    <span class="cta" style="display: block; text-align: center; margin-top: 15px;">Découvrir →</span>
+                </div>
+                <div class="product-card">
+                    <h4>Thym × Fraise</h4>
+                    <em>Surprenant, désaltérant, tout en nuances.</em>
+                    <p>Le thym ouvre la dégustation. La fraise l'arrondit. Une composition complexe, ronde, légèrement fruitée.</p>
+                    <span class="cta" style="display: block; text-align: center; margin-top: 15px;">Découvrir →</span>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <span class="cta">Choisissez votre bulle. Ou les deux. →</span>
+            </div>
+        </div>
+
+        <!-- 4. INSTAGRAM SCROLL -->
+        <div class="section">
+            <h3>SECTION 4 — #SANOSANO</h3>
+            <h4>#SANOSANO — Vos moments.</h4>
+            <p style="color: #6B7C6E;">Partagez votre rituel. Taguez <span class="ig-handle">@sanosano</span> pour apparaître ici.</p>
+            <div class="ig-scroll">
+                <div class="ig-card">[Photo 1]</div>
+                <div class="ig-card">[Photo 2]</div>
+                <div class="ig-card">[Photo 3]</div>
+                <div class="ig-card">[Photo 4]</div>
+                <div class="ig-card">[Photo 5]</div>
+                <div class="ig-card">[Photo 6]</div>
+                <div class="ig-card">[Photo 7]</div>
+                <div class="ig-card">[Photo 8]</div>
+            </div>
+            <p style="font-size: 12px; color: #6B7C6E; font-style: italic; margin-top: 10px;">Scroll horizontal · Curation manuelle · Photos clients dans contextes premium</p>
+        </div>
+
+        <!-- 5. PROCÉDÉ & ORIGINE -->
+        <div class="section">
+            <h3>SECTION 5 — Le procédé &amp; l'origine</h3>
+            <h4>Une bulle pensée comme un grand effervescent. Sans alcool. Sans fermentation. Sans compromis.</h4>
+            <p style="color: #2D6A4F; font-style: italic;">La plante. Rien que la plante.</p>
+            <p>Nous sélectionnons des plantes fraîches à leur apogée aromatique. Une dynamisation délicate en capte l'essence intacte — sans chaleur, sans altération. Une filtration respectueuse préserve cette pureté jusqu'à votre verre.</p>
+            <p>Tout est né à <strong>Foster Farm</strong>, première Slow Food Farm de Belgique. Un écosystème agricole régénératif aux portes de Bruxelles : eau de source, énergie verte, ingrédients 100% bio, tracés, certifiés.</p>
+            <p>Le résultat : la plante entière, exprimée en bulles.</p>
+            <div class="cert-row">
+                <p><strong>Logos de validation :</strong> Bio Garantie Belgique · FR-BIO-01 · Slow Food · Halal</p>
+            </div>
+            <span class="cta" style="margin-top: 20px;">Voir comment c'est fait →</span>
+        </div>
+
+        <!-- 6. OÙ TROUVER -->
+        <div class="section">
+            <h3>SECTION 6 — Où trouver</h3>
+            <h4>SANO SANO près de chez toi.</h4>
+            <p>Découvre nos distributeurs — cavistes, épiceries fines, magasins bio.</p>
+            <p style="text-align: center; color: #6B7C6E; font-style: italic; margin: 20px 0;">🍇 Cavistes sélectionnés · Épiceries fines · Magasins bio</p>
+            <p style="text-align: center; font-size: 13px; color: #6B7C6E; margin-top: 20px;"><strong>Recherche :</strong> [Par code postal] → Trouver près de chez moi</p>
+        </div>
+
+        <!-- 7. FINAL CTA -->
+        <div class="section">
+            <h3>SECTION 7 — Final CTA</h3>
+            <h4>Prêt à célébrer autrement ?</h4>
+            <p style="font-size: 18px; color: #2D6A4F; margin: 15px 0;">75 cl. Bouchon liège. Muselet.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+                <span class="cta" style="text-align: center; display: flex; align-items: center; justify-content: center;">🗺️ Trouver près de chez moi</span>
+                <span class="cta" style="text-align: center; display: flex; align-items: center; justify-content: center;">📍 Découvrir nos points de vente</span>
+            </div>
+            <p style="text-align: center; font-size: 14px; color: #6B7C6E; margin-top: 15px;">100% bio · Conservé naturellement · Disponible en caviste et épicerie fine</p>
+            <div class="reassurance">✓ Bio certifié · Conservé naturellement · Sélectionné par nos distributeurs partenaires</div>
+        </div>
+
+        <!-- RECAP -->
+        <div class="section">
+            <h3>Structure finale (7 sections)</h3>
+            <table class="recap-table">
+                <tr><th>#</th><th>Section</th><th>Rôle</th></tr>
+                <tr><td>1</td><td>Hero (+ strip presse)</td><td>Aspiration + crédibilité immédiate</td></tr>
+                <tr><td>2</td><td>Le goût &amp; la promesse</td><td>Émotion + 4 bénéfices rationnels</td></tr>
+                <tr><td>3</td><td>Les produits</td><td>Choix concret</td></tr>
+                <tr><td>4</td><td>#SANOSANO</td><td>Communauté en images (social proof)</td></tr>
+                <tr><td>5</td><td>Le procédé &amp; l'origine</td><td>Confiance + traçabilité + logos</td></tr>
+                <tr><td>6</td><td>Où trouver</td><td>Conversion locator</td></tr>
+                <tr><td>7</td><td>Final CTA</td><td>Récap + action</td></tr>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #E8F5EE; color: #6B7C6E; font-size: 13px;">
+            <p>🍾 SANO SANO — Homepage v3 (7 sections)</p>
+        </div>
+    </div>
+</body>
+</html>
