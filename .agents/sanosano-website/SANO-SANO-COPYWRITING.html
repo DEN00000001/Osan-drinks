@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANO SANO — Copywriting Complet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1A1A1A;
+            background: #FAF7F0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 48px;
+            color: #1C3D2E;
+            margin: 40px 0 20px 0;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            color: #1C3D2E;
+            margin: 30px 0 15px 0;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: #2D6A4F;
+            margin: 25px 0 10px 0;
+            font-weight: 400;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: #2D6A4F;
+            margin: 20px 0 8px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 12px 0;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .header {
+            border-bottom: 3px solid #1C3D2E;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin-top: 0;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #E8F5EE;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .hero {
+            background: linear-gradient(180deg, #1C3D2E 0%, #2D6A4F 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .hero h2 {
+            color: #FAF7F0;
+            margin-top: 0;
+        }
+
+        .hero p {
+            color: #F2EDE4;
+            font-size: 17px;
+        }
+
+        .cta {
+            display: inline-block;
+            background: #1C3D2E;
+            color: #FAF7F0;
+            padding: 12px 24px;
+            border-radius: 2px;
+            text-decoration: none;
+            margin: 8px 8px 8px 0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 1.5px solid #1C3D2E;
+            color: #1C3D2E;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #FAF7F0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #1C3D2E;
+            color: #FAF7F0;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #E8F5EE;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .benefit {
+            background: #FAF7F0;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #2D6A4F;
+        }
+
+        .benefit strong {
+            color: #2D6A4F;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .product-card {
+            background: #FAF7F0;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #E8F5EE;
+        }
+
+        .product-card h4 {
+            color: #1C3D2E;
+            margin-top: 0;
+        }
+
+        .product-card em {
+            color: #6B7C6E;
+            display: block;
+            margin: 8px 0 12px 0;
+        }
+
+        .moments {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .moment {
+            background: #FAF7F0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .moment strong {
+            display: block;
+            margin: 8px 0;
+            color: #2D6A4F;
+        }
+
+        .page-break {
+            page-break-after: always;
+            margin: 60px 0;
+        }
+
+        .alternative {
+            background: #F2EDE4;
+            padding: 15px;
+            border-left: 3px solid #C9A84C;
+            margin: 15px 0;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        .reassurance {
+            background: #E8F5EE;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #2D6A4F;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 40px;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .page-break {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍾 SANO SANO</h1>
+            <p style="font-size: 18px; color: #2D6A4F; margin-top: 10px;">Copywriting Complet — Homepage & Pages Produits</p>
+            <p style="font-size: 13px; color: #6B7C6E; margin-top: 15px;">Version mai 2026 · Brand voice : Festif sans excès. Élégant sans prétention.</p>
+        </div>
+
+        <!-- HOMEPAGE -->
+        <div class="section">
+            <h2>🏠 HOMEPAGE</h2>
+
+            <h3 style="margin-top: 0;">SECTION 1 — HERO</h3>
+
+            <div class="hero">
+                <h2 style="color: white;">Célébrez. Sans une goutte.</h2>
+                <p>SANO SANO, c'est la bulle botanique pour adultes — 00,00 % d'alcool, jamais fermentée, dynamisée à partir de plantes fraîches. Une nouvelle catégorie pour les moments qui comptent.</p>
+                <div style="margin-top: 20px;">
+                    <span class="cta">Découvrir nos bulles →</span>
+                    <span class="cta cta-secondary">Voir le procédé</span>
+                </div>
+            </div>
+
+            <div class="alternative">
+                <strong>Alternatives Headlines (A/B test) :</strong><br>
+                • <em>"Les bulles. Sans le reste."</em> (oppose le festif au superflu)<br>
+                • <em>"Zéro compromis. 100% festif."</em> (baseline officielle)
+            </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="section">
+            <h3>SECTION 2 — Le constat (Problem/Pain)</h3>
+
+            <h4>Trinquer, c'est un rituel. Pas une obligation de boire.</h4>
+
+            <p>À table, lors d'un toast, à l'apéro — la personne qui ne boit pas se retrouve avec un jus d'orange ou un verre d'eau. C'est inconfortable. C'est exclusif. C'est révolu.</p>
+
+            <p>SANO SANO existe pour celles et ceux qui veulent <strong>lever leur verre comme tout le monde</strong>, sans rien y ajouter qu'ils n'auraient pas choisi.</p>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="section">
+            <h3>SECTION 3 — La promesse (Solution/Benefits)</h3>
+
+            <h4>Une bulle pensée comme un grand effervescent.<br>Sauf qu'il n'y a rien dedans à regretter.</h4>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <strong>🌿 100% botanique</strong>
+                    Plantes fraîches, biologiques, dynamisées à leur apogée. Aucun arôme ajouté.
+                </div>
+                <div class="benefit">
+                    <strong>💧 00,00 % alcool</strong>
+                    Pas "presque". Pas "low". Zéro absolu, vérifié.
+                </div>
+                <div class="benefit">
+                    <strong>🔬 Jamais fermentée</strong>
+                    Notre procédé exclusif extrait le goût sans fermentation.
+                </div>
+                <div class="benefit">
+                    <strong>⚡ &lt; 6 kcal / 100ml</strong>
+                    Indice glycémique bas. Léger comme une eau, complexe comme un grand vin.
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="section">
+            <h3>SECTION 4 — Les produits</h3>
+
+            <h4>Deux bulles. Deux mondes.</h4>
+
+            <div class="products">
+                <div class="product-card">
+                    <h4>Basilic × Gingembre</h4>
+                    <em>Frais, vibrant, tonique.</em>
+                    <p>La verdeur du basilic en attaque, la chaleur du gingembre en finale. Extra brut, élégant, parfaitement équilibré.</p>
+                    <span class="cta" style="display: block; text-align: center; margin-top: 15px;">Découvrir →</span>
+                </div>
+                <div class="product-card">
+                    <h4>Thym × Fraise</h4>
+                    <em>Surprenant, désaltérant, tout en nuances.</em>
+                    <p>Le thym ouvre la dégustation. La fraise l'arrondit. Une composition complexe, ronde, légèrement fruitée.</p>
+                    <span class="cta" style="display: block; text-align: center; margin-top: 15px;">Découvrir →</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5 -->
+        <div class="section">
+            <h3>SECTION 5 — Le procédé (Différenciation)</h3>
+
+            <h4>La dynamisation, notre signature.</h4>
+
+            <p>Pas de fermentation. Pas d'arômes. Pas de raccourcis.</p>
+
+            <p>Nous sélectionnons des plantes fraîches à leur apogée. Une infusion ultrasonique capte leur quintessence aromatique. Une filtration délicate la préserve.</p>
+
+            <p>Le résultat : la pureté d'une plante qui vient d'être cueillie, mise en bulles.</p>
+
+            <span class="cta">Voir comment c'est fait →</span>
+        </div>
+
+        <!-- SECTION 6 -->
+        <div class="section">
+            <h3>SECTION 6 — Social Proof / Origine</h3>
+
+            <h4>Né à Foster Farm.<br>Première Slow Food Farm de Belgique.</h4>
+
+            <p>Aux portes de Bruxelles, un écosystème agricole régénératif. Eau de source. Énergie verte. Ingrédients 100% bio, tracés, certifiés.</p>
+
+            <p>Une promesse simple : respect du vivant, valorisation des plantes, naturalité absolue.</p>
+
+            <p style="margin-top: 20px; font-size: 13px; color: #6B7C6E;"><strong>Logos :</strong> Bio Garantie Belgique · FR-BIO-01 · Slow Food</p>
+        </div>
+
+        <!-- SECTION 7 -->
+        <div class="section">
+            <h3>SECTION 7 — Moments / Use Cases</h3>
+
+            <h4>Pour les moments qui comptent.</h4>
+
+            <div class="moments">
+                <div class="moment">
+                    <div style="font-size: 32px;">🥂</div>
+                    <strong>L'apéritif haut de gamme</strong>
+                    <p style="margin: 8px 0; font-size: 14px;">Quand tu veux trinquer sans subir.</p>
+                </div>
+                <div class="moment">
+                    <div style="font-size: 32px;">🍽️</div>
+                    <strong>Le repas conscient</strong>
+                    <p style="margin: 8px 0; font-size: 14px;">Quand le plat mérite plus qu'une eau pétillante.</p>
+                </div>
+                <div class="moment">
+                    <div style="font-size: 32px;">🎉</div>
+                    <strong>La célébration</strong>
+                    <p style="margin: 8px 0; font-size: 14px;">Quand chacun lève son verre — sans exclusion.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 8 -->
+        <div class="section">
+            <h3>SECTION 8 — Où acheter</h3>
+
+            <h4>SANO SANO près de chez toi.</h4>
+            <p>En ligne, en boutique, ou dans tes restaurants préférés. Choisis ton mode de vie.</p>
+
+            <p style="text-align: center; color: #6B7C6E; font-style: italic; margin: 20px 0;">[MAP INTERACTIVE - Google Maps / Mapbox avec filtres]</p>
+
+            <table style="margin: 20px 0;">
+                <tr>
+                    <th>🏪 En ligne</th>
+                    <th>🍇 En boutique</th>
+                    <th>🍽️ En restaurant</th>
+                </tr>
+                <tr>
+                    <td>sanosanodrinks.com<br>Livraison rapide</td>
+                    <td>Cavistes sélectionnés<br>Épiceries fines<br>Magasins bio</td>
+                    <td>Restaurants partenaires<br>Hôtels<br>Bars à vin<br>Traiteurs</td>
+                </tr>
+            </table>
+
+            <p style="text-align: center; font-size: 13px; color: #6B7C6E;"><strong>Filtres :</strong> ☐ En ligne | ☐ En boutique | ☐ Restaurants/HoReCa<br><strong>Recherche :</strong> [Par code postal]</p>
+        </div>
+
+        <!-- SECTION 9 -->
+        <div class="section">
+            <h3>SECTION 9 — Final CTA</h3>
+
+            <h4>Prêt à célébrer autrement ?</h4>
+
+            <p style="font-size: 18px; color: #2D6A4F; margin: 15px 0;">75 cl. Bouchon liège. Muselet. À partir de 9,90 €.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin: 20px 0;">
+                <span class="cta" style="text-align: center; display: flex; align-items: center; justify-content: center;">🗺️ Trouver près de chez moi</span>
+                <span class="cta" style="text-align: center; display: flex; align-items: center; justify-content: center;">📦 Commander en ligne</span>
+                <span class="cta" style="text-align: center; display: flex; align-items: center; justify-content: center;">🎁 Pack découverte</span>
+            </div>
+
+            <div class="reassurance">
+                ✓ Livraison gratuite en Belgique dès 50 € · Paiement sécurisé · Conservé bio
+            </div>
+        </div>
+
+        <!-- PAGE BREAK -->
+        <div class="page-break"></div>
+
+        <!-- PAGES PRODUITS -->
+        <div class="section">
+            <h2>🌿 PAGES PRODUITS</h2>
+
+            <h3 style="margin-top: 0;">PAGE PRODUIT — BULLES BLANCHES</h3>
+
+            <div class="hero">
+                <h2 style="color: white;">Basilic × Gingembre.</h2>
+                <p style="margin-top: 10px;">L'attaque verte, la finale chaude.</p>
+                <p style="font-size: 16px;">Bulles blanches. Extra brut. 00,00 % alcool. La verdeur du basilic relevée par la tension épicée du gingembre — pour un apéritif vivant, tendu, mémorable.</p>
+                <span class="cta" style="margin-top: 20px;">Ajouter au panier — 9,90 €</span>
+            </div>
+
+            <h4 style="margin-top: 30px;">La dégustation en trois temps</h4>
+
+            <p><strong>Attaque</strong> — Le basilic se déploie d'abord. Vert, frais, herbacé. C'est l'arôme que tu reconnais avant même de boire.</p>
+
+            <p><strong>Milieu de bouche</strong> — La bulle fine arrive, structurée, sèche. Aucun sucre pour masquer.</p>
+
+            <p><strong>Finale</strong> — Le gingembre prend le relais. Une pointe épicée, longue, tonique. La sensation reste — fraîche et nette.</p>
+
+            <h4 style="margin-top: 25px;">À servir avec…</h4>
+
+            <p>🥗 Salades vertes, tartares de poisson, ceviche<br>
+            🍣 Sushis, sashimis, cuisine japonaise<br>
+            🧀 Fromages frais (chèvre, ricotta, mozzarella)<br>
+            🌶️ Plats légèrement épicés (thaï, indien doux)<br>
+            🍓 Apéritifs classiques (olives, anchois, tapenade)<br><br>
+            <em>Température idéale : 6-8°C, dans une flûte ou un verre à vin blanc.</em></p>
+
+            <h4 style="margin-top: 25px;">Composition</h4>
+
+            <p><strong>Ingrédients :</strong> Eau · Basilic* · Miel d'acacia* · Gingembre* · Acide ascorbique · Acide citrique<br>
+            <em>*100% biologiques</em></p>
+
+            <table style="margin-top: 15px;">
+                <tr>
+                    <th>Énergie</th>
+                    <th>Glucides</th>
+                    <th>Sucres</th>
+                    <th>Sel</th>
+                    <th>Alcool</th>
+                </tr>
+                <tr>
+                    <td>19 kJ / 4 kcal</td>
+                    <td>0,9 g</td>
+                    <td>1,5 g</td>
+                    <td>0,01 g</td>
+                    <td><strong>00,00 %</strong></td>
+                </tr>
+            </table>
+
+            <p style="margin-top: 15px; font-size: 14px;">✓ Sans gluten · Sans sulfites · Bio · Végétarien</p>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="section">
+            <h3 style="margin-top: 0;">PAGE PRODUIT — BULLES ROSÉES</h3>
+
+            <div class="hero">
+                <h2 style="color: white;">Thym × Fraise.</h2>
+                <p style="margin-top: 10px;">L'herbe ouvre, le fruit referme.</p>
+                <p style="font-size: 16px;">Bulles rosées. Extra brut. 00,00 % alcool. La note herbacée du thym, arrondie par la douceur acidulée de la fraise — une rondeur sèche, surprenante, désaltérante.</p>
+                <span class="cta" style="margin-top: 20px;">Ajouter au panier — 9,90 €</span>
+            </div>
+
+            <h4 style="margin-top: 30px;">Une dégustation surprenante</h4>
+
+            <p><strong>Attaque</strong> — Le thym entre en premier. Herbe sèche, méditerranéenne, racée. On ne s'y attend pas dans une boisson rosée.</p>
+
+            <p><strong>Milieu de bouche</strong> — Les bulles fines portent la fraise. Acidulée, légère, jamais sucrée.</p>
+
+            <p><strong>Finale</strong> — Les deux dansent. Une rondeur sèche qui revient, longue, désaltérante.</p>
+
+            <h4 style="margin-top: 25px;">À servir avec…</h4>
+
+            <p>🐟 Poissons grillés, crustacés, plateaux fruits de mer<br>
+            🍅 Cuisine méditerranéenne, tomates, basilic<br>
+            🍰 Desserts peu sucrés aux fruits rouges<br>
+            🦆 Carpaccios de bœuf, jambons crus, charcuteries fines<br>
+            🌅 Apéritif d'été, terrasse, brunch<br><br>
+            <em>Température idéale : 6-8°C, dans une flûte ou un verre tulipe.</em></p>
+
+            <h4 style="margin-top: 25px;">Composition</h4>
+
+            <p><strong>Ingrédients :</strong> Eau · Fraise* · Framboise* · Miel d'acacia* · Thym* · Acide ascorbique · Acide citrique<br>
+            <em>*100% biologiques</em></p>
+
+            <table style="margin-top: 15px;">
+                <tr>
+                    <th>Énergie</th>
+                    <th>Glucides</th>
+                    <th>Sucres</th>
+                    <th>Sel</th>
+                    <th>Alcool</th>
+                </tr>
+                <tr>
+                    <td>19 kJ / 4 kcal</td>
+                    <td>0,9 g</td>
+                    <td>1,5 g</td>
+                    <td>0,01 g</td>
+                    <td><strong>00,00 %</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- FOOTER -->
+        <div style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #E8F5EE; color: #6B7C6E; font-size: 13px;">
+            <p>🍾 SANO SANO — Copy Complet — Mai 2026</p>
+            <p>Pour exporter en PDF : Fichier → Imprimer → Enregistrer en PDF</p>
+        </div>
+    </div>
+</body>
+</html>
