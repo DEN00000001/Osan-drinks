@@ -78,11 +78,12 @@ Le thym ouvre la dégustation. La fraise l'arrondit. Une composition complexe, r
 ### SECTION 5 — Le procédé (Trust & Differentiation)
 
 **Header :**
-## La dynamisation, notre signature.
+## Infusé par ultrasons. Jamais chauffé. Jamais fermenté.
+
+**Sous-header :**
+## La plante. Rien que la plante.
 
 **Body :**
-Pas de fermentation. Pas d'arômes. Pas de raccourcis.
-
 Nous sélectionnons des plantes fraîches à leur apogée. Une infusion ultrasonique capte leur quintessence aromatique. Une filtration délicate la préserve.
 
 Le résultat : la pureté d'une plante qui vient d'être cueillie, mise en bulles.
