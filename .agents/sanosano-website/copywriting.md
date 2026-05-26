@@ -22,12 +22,10 @@ Parce que trinquer, ça s'améliore. SANO SANO, c'est la bulle botanique pour ad
 ### SECTION 2 — Le constat (Problem/Pain)
 
 **Header :**
-## Trinquer, c'est un rituel. Pas une obligation de boire.
+## Le rituel est pour tout le monde.
 
 **Body :**
-À table, lors d'un toast, à l'apéro — la personne qui ne boit pas se retrouve avec un jus d'orange ou un verre d'eau. C'est inconfortable. C'est exclusif. C'est révolu.
-
-SANO SANO existe pour celles et ceux qui veulent **lever leur verre comme tout le monde**, sans rien y ajouter qu'ils n'auraient pas choisi.
+Le verre qu'on lève, la bulle qu'on partage, le moment qu'on crée ensemble — ça n'a jamais dépendu de ce qu'il y avait dedans. Sauf qu'on n'avait pas encore SANO SANO.
 
 ---
 
