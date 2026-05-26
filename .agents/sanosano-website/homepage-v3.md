@@ -8,7 +8,7 @@
 ## SECTION 1 — HERO
 
 **Headline :**
-# Festif par nature.
+# Zéro compromis. 100% festif.
 
 **Subheadline :**
 Basilic vif, gingembre qui claque, thym sauvage, fraise de saison — chaque gorgée, une architecture. La boisson botanique pétillante créée pour ceux qui mangent bien et boivent mieux.
