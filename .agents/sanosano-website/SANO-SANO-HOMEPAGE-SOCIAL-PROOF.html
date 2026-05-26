@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANO SANO — Homepage (avec Social Proof)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1A1A1A;
+            background: #FAF7F0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+        }
+
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: #1C3D2E; margin: 40px 0 20px 0; font-weight: 400; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: #1C3D2E; margin: 30px 0 15px 0; font-weight: 400; }
+        h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: #2D6A4F; margin: 25px 0 10px 0; font-weight: 400; }
+        h4 { font-size: 20px; color: #2D6A4F; margin: 20px 0 8px 0; font-weight: 600; }
+        p { margin: 12px 0; font-size: 16px; line-height: 1.7; }
+
+        .header {
+            border-bottom: 3px solid #1C3D2E;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #E8F5EE;
+        }
+        .section:last-child { border-bottom: none; }
+
+        .hero {
+            background: linear-gradient(180deg, #1C3D2E 0%, #2D6A4F 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .hero h2 { color: #FAF7F0; margin-top: 0; }
+        .hero p { color: #F2EDE4; font-size: 17px; }
+
+        .cta {
+            display: inline-block;
+            background: #1C3D2E;
+            color: #FAF7F0;
+            padding: 12px 24px;
+            border-radius: 2px;
+            text-decoration: none;
+            margin: 8px 8px 8px 0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .cta-secondary { background: transparent; border: 1.5px solid #1C3D2E; color: #1C3D2E; }
+
+        .benefits { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .benefit { background: #FAF7F0; padding: 20px; border-radius: 8px; border-left: 3px solid #2D6A4F; }
+        .benefit strong { color: #2D6A4F; display: block; margin-bottom: 8px; }
+
+        .products { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
+        .product-card { background: #FAF7F0; padding: 24px; border-radius: 12px; border: 1px solid #E8F5EE; }
+        .product-card h4 { color: #1C3D2E; margin-top: 0; }
+        .product-card em { color: #6B7C6E; display: block; margin: 8px 0 12px 0; }
+
+        .moments { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .moment { background: #FAF7F0; padding: 20px; border-radius: 8px; text-align: center; }
+        .moment strong { display: block; margin: 8px 0; color: #2D6A4F; }
+
+        .reassurance {
+            background: #E8F5EE;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #2D6A4F;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* SOCIAL PROOF STYLES */
+        .sp-block {
+            background: linear-gradient(180deg, #FAF7F0 0%, #F2EDE4 100%);
+            border: 1px dashed #C9A84C;
+            border-radius: 6px;
+            padding: 24px;
+            margin: 30px 0;
+            position: relative;
+        }
+        .sp-label {
+            display: inline-block;
+            background: #C9A84C;
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border-radius: 2px;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+
+        .press-strip {
+            text-align: center;
+            padding: 18px 0;
+        }
+        .press-strip p {
+            color: #6B7C6E;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .press-logos {
+            color: #1C3D2E;
+            font-weight: 600;
+            opacity: 0.6;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .testimonial-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 20px;
+            color: #1C3D2E;
+            line-height: 1.5;
+            text-align: center;
+            padding: 20px 30px;
+        }
+        .testimonial-author {
+            text-align: center;
+            font-size: 13px;
+            color: #6B7C6E;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .badges-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            padding: 10px 0;
+        }
+        .badge {
+            background: white;
+            border: 1px solid #E8F5EE;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #2D6A4F;
+            font-weight: 600;
+        }
+
+        .counter-line {
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            color: #1C3D2E;
+            padding: 16px 0;
+        }
+        .counter-line strong { color: #C9A84C; }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            border-left: 3px solid #C9A84C;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #1A1A1A;
+        }
+        .testimonial-card .author {
+            margin-top: 14px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #1C3D2E;
+            font-style: normal;
+        }
+
+        .ig-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        .ig-cell {
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #2D6A4F 0%, #1C3D2E 100%);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+        }
+
+        .footer-press {
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            color: #6B7C6E;
+            padding: 14px 0;
+        }
+
+        .toast {
+            background: #FAF7F0;
+            border-left: 3px solid #1C3D2E;
+            padding: 12px 16px;
+            font-size: 13px;
+            color: #1A1A1A;
+            border-radius: 4px;
+            margin: 8px 0;
+            display: inline-block;
+            max-width: 400px;
+        }
+
+        .recap-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .recap-table th, .recap-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #E8F5EE;
+        }
+        .recap-table th {
+            background: #1C3D2E;
+            color: white;
+            font-weight: 600;
+        }
+
+        @media print {
+            body { padding: 0; background: white; }
+            .container { max-width: 100%; padding: 40px; box-shadow: none; border-radius: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍾 SANO SANO</h1>
+            <p style="font-size: 18px; color: #2D6A4F; margin-top: 10px;">Homepage avec Social Proof intégré</p>
+            <p style="font-size: 13px; color: #6B7C6E; margin-top: 15px;">9 sections de copy + 8 modules social proof placés dans le flow</p>
+            <p style="font-size: 12px; color: #C9A84C; margin-top: 10px;">Les blocs encadrés en doré sont les ajouts social proof</p>
+        </div>
+
+        <!-- HERO -->
+        <div class="section">
+            <h3 style="margin-top: 0;">SECTION 1 — HERO</h3>
+            <div class="hero">
+                <h2 style="color: white;">Festif par nature.</h2>
+                <p>Basilic vif, gingembre qui claque, thym sauvage, fraise de saison — chaque gorgée, une architecture. La boisson botanique pétillante créée pour ceux qui mangent bien et boivent mieux.</p>
+                <div style="margin-top: 20px;">
+                    <span class="cta">Découvrir nos bulles →</span>
+                    <span class="cta cta-secondary">Voir le procédé</span>
+                </div>
+            </div>
+
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 1 · Bandeau presse</span>
+                <div class="press-strip">
+                    <p>Ils en parlent</p>
+                    <div class="press-logos">Le Figaro Madame · Elle à Table · Vogue Paris · Gault &amp; Millau · M Le Magazine · Konbini Food</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1.5 -->
+        <div class="section">
+            <h3>SECTION 1.5 — Les principes</h3>
+            <h4>Zero alcool. Jamais fermenté. Botanique frais et low calories.</h4>
+        </div>
+
+        <!-- 2 -->
+        <div class="section">
+            <h3>SECTION 2 — Le goût</h3>
+            <h4>Trinquer, c'est un rituel. Pas une obligation de boire.</h4>
+            <p>Certaines boissons se boivent. Celle-là se goûte. La bulle qui titille, le basilic qui s'ouvre sur le gingembre, la fraise qui fond sous le thym — une complexité aromatique qui n'a rien à envier à la carte des vins.</p>
+            <p>Pensée par un chef : ça se sent à la première gorgée.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="section">
+            <h3>SECTION 3 — La promesse</h3>
+            <h4>Botanique. Pétillant. Irréprochable.</h4>
+            <p style="color: #2D6A4F; font-style: italic;">Complexe. Pur. Jamais fermenté.</p>
+            <div class="benefits">
+                <div class="benefit"><strong>🌿 Complexité aromatique</strong>Deux assemblages botaniques développés comme des accords de cuisine. Pas une saveur, une séquence.</div>
+                <div class="benefit"><strong>🔬 Dynamisée</strong>Pour que chaque plante exprime son caractère jusqu'en fond de verre. Aucun arôme ajouté.</div>
+                <div class="benefit"><strong>💧 Jamais fermentée</strong>Aucun compromis aromatique. La pureté botanique, intacte. 0,00 % absolu.</div>
+                <div class="benefit"><strong>⚡ Low Calories</strong>Parce qu'un grand goût n'a pas à peser lourd.</div>
+            </div>
+
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 2 · Citation caviste</span>
+                <p class="testimonial-quote">« SANO SANO change la conversation. Pour la première fois, je peux proposer un accord mets-boisson sans alcool qui tient la table. C'est devenu un essentiel de ma sélection. »</p>
+                <p class="testimonial-author">— [Prénom Nom], Caviste, [Nom de la boutique], Paris</p>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="section">
+            <h3>SECTION 4 — Les produits</h3>
+            <h4>Deux bulles, Deux caracteres.</h4>
+            <div class="products">
+                <div class="product-card">
+                    <h4>Basilic × Gingembre</h4>
+                    <em>Frais, vibrant, tonique.</em>
+                    <p>La verdeur du basilic en attaque, la chaleur du gingembre en finale. Extra brut, élégant, parfaitement équilibré.</p>
+                    <span class="cta" style="display: block; text-align: center; margin-top: 15px;">Découvrir →</span>
+                </div>
+                <div class="product-card">
+                    <h4>Thym × Fraise</h4>
+                    <em>Surprenant, désaltérant, tout en nuances.</em>
+                    <p>Le thym ouvre la dégustation. La fraise l'arrondit. Une composition complexe, ronde, légèrement fruitée.</p>
+                    <span class="cta" style="display: block; text-align: center; margin-top: 15px;">Découvrir →</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="section">
+            <h3>SECTION 5 — Le procédé</h3>
+            <h4>Une bulle pensée comme un grand effervescent. Sans alcool. Sans fermentation. Sans compromis.</h4>
+            <p>Nous sélectionnons des plantes fraîches à leur apogée aromatique. Une dynamisation délicate en capte l'essence intacte — sans chaleur, sans altération. Une filtration respectueuse préserve cette pureté jusqu'à votre verre.</p>
+            <p>Le résultat : la plante entière, exprimée en bulles.</p>
+            <span class="cta">Voir comment c'est fait →</span>
+
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 3 · Badges de reconnaissance</span>
+                <div class="badges-row">
+                    <span class="badge">🌱 Certifié Bio (FR-BIO-01)</span>
+                    <span class="badge">🇧🇪 Bio Garantie Belgique</span>
+                    <span class="badge">🐌 Slow Food</span>
+                    <span class="badge">☪ Halal</span>
+                    <span class="badge">🏭 Made in Belgium</span>
+                    <span class="badge">🚫 Sans alcool · Sans fermentation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="section">
+            <h3>SECTION 6 — Origine</h3>
+            <h4>Né à Foster Farm.<br>Première Slow Food Farm de Belgique.</h4>
+            <p>Aux portes de Bruxelles, un écosystème agricole régénératif. Eau de source. Énergie verte. Ingrédients 100% bio, tracés, certifiés.</p>
+            <p>Une promesse simple : respect du vivant, valorisation des plantes, naturalité absolue.</p>
+            <p style="margin-top: 20px; font-size: 13px; color: #6B7C6E;"><strong>Logos :</strong> Bio Garantie Belgique · FR-BIO-01 · Slow Food · Halal</p>
+        </div>
+
+        <!-- 7 -->
+        <div class="section">
+            <h3>SECTION 7 — Moments</h3>
+            <h4>Pour les moments qui comptent.</h4>
+            <div class="moments">
+                <div class="moment"><div style="font-size: 32px;">🥂</div><strong>L'apéritif haut de gamme</strong><p style="margin: 8px 0; font-size: 14px;">Quand tu veux trinquer sans subir.</p></div>
+                <div class="moment"><div style="font-size: 32px;">🍽️</div><strong>Le repas conscient</strong><p style="margin: 8px 0; font-size: 14px;">Quand le plat mérite plus qu'une eau pétillante.</p></div>
+                <div class="moment"><div style="font-size: 32px;">🎉</div><strong>La célébration</strong><p style="margin: 8px 0; font-size: 14px;">Quand chacun lève son verre — sans exclusion.</p></div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="section">
+            <h3>SECTION 8 — Où trouver</h3>
+            <h4>SANO SANO près de chez toi.</h4>
+
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 5 · Compteur cavistes</span>
+                <p class="counter-line"><strong>Déjà 47 cavistes et épiceries fines</strong> nous ont rejoints en Belgique et en France.</p>
+            </div>
+
+            <p>Découvre nos distributeurs — cavistes, épiceries fines, magasins bio.</p>
+            <p style="text-align: center; color: #6B7C6E; font-style: italic; margin: 20px 0;">🍇 Cavistes sélectionnés · Épiceries fines · Magasins bio</p>
+            <p style="text-align: center; font-size: 13px; color: #6B7C6E; margin-top: 20px;"><strong>Recherche :</strong> [Par code postal] → Trouver près de chez moi</p>
+
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 4 · Témoignages clients</span>
+                <h4 style="text-align: center; margin-top: 10px;">Ils ont trouvé leur bulle.</h4>
+                <p style="text-align: center; font-size: 14px; color: #6B7C6E;">Architectes, médecins, sommeliers, parents — voici comment SANO SANO s'est invité dans leurs moments.</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p>« Le verre du soir, sans la gueule de bois du lendemain. Ma femme et moi le partageons en cuisinant. C'est devenu notre rituel. »</p>
+                        <p class="author">Marc, 42 ans — Architecte, Bruxelles</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>« Enceinte de mon deuxième, je redoutais les dîners. SANO SANO m'a redonné la table. Mes amis en commandent maintenant aussi. »</p>
+                        <p class="author">Camille, 34 ans — Avocate, Paris</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>« J'ai servi le Bulles Blanches sur un ceviche de bar. Mes invités ont cru à un grand cru. La conversation s'est ouverte naturellement. »</p>
+                        <p class="author">Élise, 38 ans — Chef à domicile, Lyon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="section">
+            <h3>SECTION 9 — Final CTA</h3>
+            <h4>Prêt à célébrer autrement ?</h4>
+            <p style="font-size: 18px; color: #2D6A4F; margin: 15px 0;">75 cl. Bouchon liège. Muselet.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+                <span class="cta" style="text-align: center; display: flex; align-items: center; justify-content: center;">🗺️ Trouver près de chez moi</span>
+                <span class="cta" style="text-align: center; display: flex; align-items: center; justify-content: center;">📍 Découvrir nos points de vente</span>
+            </div>
+            <p style="text-align: center; font-size: 14px; color: #6B7C6E; margin-top: 15px;">100% bio · Conservé naturellement · Disponible en caviste et épicerie fine</p>
+            <div class="reassurance">✓ Bio certifié · Conservé naturellement · Sélectionné par nos distributeurs partenaires</div>
+
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 6 · Mur Instagram</span>
+                <h4 style="text-align: center; margin-top: 10px;">#SANOSANO — Vos moments</h4>
+                <p style="text-align: center; font-size: 14px; color: #6B7C6E;">Partagez votre rituel. Taguez @sanosano pour apparaître ici.</p>
+                <div class="ig-grid">
+                    <div class="ig-cell">[Photo 1]</div>
+                    <div class="ig-cell">[Photo 2]</div>
+                    <div class="ig-cell">[Photo 3]</div>
+                    <div class="ig-cell">[Photo 4]</div>
+                    <div class="ig-cell">[Photo 5]</div>
+                    <div class="ig-cell">[Photo 6]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="section">
+            <h3>FOOTER</h3>
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 9 · Mention presse rotative</span>
+                <p class="footer-press">« L'une des révélations gastronomiques de l'année. » — Le Figaro Madame, 2026</p>
+                <p style="text-align: center; font-size: 11px; color: #6B7C6E;">(Rotation aléatoire parmi 3-5 retombées presse)</p>
+            </div>
+        </div>
+
+        <!-- OPTIONAL -->
+        <div class="section">
+            <h3>Optionnel — Notifications discrètes</h3>
+            <div class="sp-block">
+                <span class="sp-label">🔹 Social Proof — Module 7 · Notifications (A/B test)</span>
+                <p style="font-size: 13px; color: #6B7C6E; margin-bottom: 12px;">Toast en coin inférieur gauche, après 30 secondes :</p>
+                <div class="toast">📍 Une cliente à Bruxelles vient de découvrir nos distributeurs</div><br>
+                <div class="toast">🍇 Le Wine Bar à Saint-Gilles vient de rejoindre la sélection</div><br>
+                <div class="toast">🥂 3 nouvelles épiceries fines en France ce mois-ci</div>
+                <p style="font-size: 11px; color: #6B7C6E; margin-top: 14px; font-style: italic;">Règles : jamais de faux compteurs · alimenté par vraies données CRM · désactivable en un clic</p>
+            </div>
+        </div>
+
+        <!-- RECAP -->
+        <div class="section">
+            <h3>Récapitulatif — Modules social proof sur la Homepage</h3>
+            <table class="recap-table">
+                <tr><th>#</th><th>Module</th><th>Placement</th></tr>
+                <tr><td>1</td><td>Bandeau presse</td><td>Sous le Hero</td></tr>
+                <tr><td>2</td><td>Citation caviste / sommelier</td><td>Après Section 3</td></tr>
+                <tr><td>3</td><td>Badges de reconnaissance</td><td>Après Section 5</td></tr>
+                <tr><td>4</td><td>Témoignages clients</td><td>Après Section 8</td></tr>
+                <tr><td>5</td><td>Compteur cavistes</td><td>Dans Section 8</td></tr>
+                <tr><td>6</td><td>Mur Instagram</td><td>Après Section 9</td></tr>
+                <tr><td>7</td><td>Notifications discrètes</td><td>Floating (optionnel)</td></tr>
+                <tr><td>9</td><td>Footer presse</td><td>Footer global</td></tr>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #E8F5EE; color: #6B7C6E; font-size: 13px;">
+            <p>🍾 SANO SANO — Homepage avec Social Proof</p>
+        </div>
+    </div>
+</body>
+</html>
