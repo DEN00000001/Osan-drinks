@@ -136,18 +136,17 @@ Quand chacun lève son verre — sans exclusion.
 ## SANO SANO près de chez toi.
 
 **Sous-titre :**
-En ligne, en boutique, ou dans tes restaurants préférés. Choisis ton mode de vie.
+En boutique ou dans tes restaurants préférés. Découvre où trouver nos bulles.
 
 **[MAP INTERACTIVE - Google Maps / Mapbox]**
 
-**Points de vente – Choisis ta manière d'acheter :**
+**Points de vente :**
 
-| 🏪 **En ligne** | 🍇 **En boutique** | 🍽️ **En restaurant** |
-|---|---|---|
-| sanosanodrinks.com<br>Livraison rapide | Cavistes sélectionnés<br>Épiceries fines<br>Magasins bio | Restaurants partenaires<br>Hôtels<br>Bars à vin<br>Traiteurs |
+| 🍇 **En boutique** | 🍽️ **En restaurant** |
+|---|---|
+| Cavistes sélectionnés<br>Épiceries fines<br>Magasins bio | Restaurants partenaires<br>Hôtels<br>Bars à vin<br>Traiteurs |
 
 **Filtre la map par type :**
-- [x] En ligne
 - [x] Points de vente physiques  
 - [x] Restaurants/HoReCa
 
@@ -166,10 +165,9 @@ En ligne, en boutique, ou dans tes restaurants préférés. Choisis ton mode de 
 
 **CTAs :**
 - `🗺️ Trouver près de chez moi` (scroll to map)
-- `📦 Commander en ligne — 9,90 €` (vers boutique)
-- `🎁 Pack découverte (2 bouteilles) — 18,90 €`
+- `📍 Découvrir nos points de vente`
 
-**Reassurance :** Livraison gratuite en Belgique dès 50 € · Paiement sécurisé · Conservé bio
+**Reassurance :** 100% bio · Conservé naturellement · Disponible en caviste, épicerie fine et restaurants
 
 ---
 ---
@@ -186,7 +184,7 @@ Bulles blanches. Extra brut. 0,00 % alcool. La verdeur du basilic relevée par l
 
 **Image :** Bouteille en gros plan, verre servi à côté, herbes fraîches en arrière-plan.
 
-**CTA :** `Ajouter au panier — 9,90 €`
+**CTA :** `Trouver près de chez moi`
 
 ---
 
@@ -243,7 +241,7 @@ Eau · Basilic* · Miel d'acacia* · Gingembre* · Acide ascorbique · Acide cit
 **Header :**
 ## Une bouteille. Six verres. Zéro lendemain.
 
-`Commander — 9,90 €` `Pack découverte (2 bouteilles) — 18,90 €`
+`Trouver près de chez moi`
 
 ---
 ---
@@ -260,7 +258,7 @@ Bulles rosées. Extra brut. 0,00 % alcool. La note herbacée du thym, arrondie p
 
 **Image :** Bouteille rose pâle, verre servi, thym et fraises fraîches.
 
-**CTA :** `Ajouter au panier — 9,90 €`
+**CTA :** `Trouver près de chez moi`
 
 ---
 
@@ -309,7 +307,7 @@ Eau · Fraise* · Framboise* · Miel d'acacia* · Thym* · Acide ascorbique · A
 
 ### CTA FINAL
 
-`Commander — 9,90 €` `Pack découverte (2 bouteilles) — 18,90 €`
+`Trouver près de chez moi`
 
 ---
 ---
@@ -460,61 +458,35 @@ Et derrière tout cela — le goût pur de la plante, intact.
 ---
 ---
 
-## 🛍️ PAGE — BOUTIQUE
+## 🍇 PAGE — OÙ TROUVER SANO SANO
 
 ### HERO
 
 **Headline :**
-# Choisissez votre célébration.
+# Où goûter SANO SANO ?
 
 **Subheadline :**
-Bouteille à l'unité, pack découverte, ou abonnement SANO Club — pour toujours en avoir au frais.
+Découvrez nos points de vente — cavistes, épiceries fines, restaurants et bars à vin qui proposent nos bulles.
 
 ---
 
-### SECTION — Produits
+### SECTION — Les deux bulles
 
-**Cards Produits (Grid 3 colonnes) :**
+**9,90 € la bouteille 75 cl**
 
-**Carte 1 :**
 **Bulles Blanches — Basilic × Gingembre**
 75 cl · 6 verres · 0,00 % alcool
-**9,90 €**
-`Ajouter au panier`
 
-**Carte 2 :**
 **Bulles Rosées — Thym × Fraise**
 75 cl · 6 verres · 0,00 % alcool
-**9,90 €**
-`Ajouter au panier`
-
-**Carte 3 :**
-**Pack Découverte — 2 bouteilles**
-1 Blanches + 1 Rosées
-**18,90 €** ~~19,80 €~~
-`Ajouter au panier`
 
 ---
 
-### SECTION — SANO Club
+### SECTION — Trouver près de chez toi
 
-**Header :**
-## SANO Club. Toujours en bulles.
+**Map interactive** avec filtres par type de point de vente (caviste, épicerie fine, restaurant, bar à vin).
 
-**Body :**
-Recevez 4 bouteilles chaque mois (mix Blanches & Rosées, ou personnalisé). Livraison gratuite. Annulation libre à tout moment.
-
-**À partir de 35 € / mois**
-
-`Rejoindre le Club →`
-
----
-
-### SECTION — Réassurance
-
-| 🚚 **Livraison gratuite** | 🔒 **Paiement sécurisé** | ↩️ **Satisfait ou remboursé** | 🌍 **Belgique + Europe** |
-|---|---|---|---|
-| Dès 50 € en Belgique | Stripe / Bancontact / Apple Pay | 14 jours | Livraison sous 3-5 jours |
+**Ou contacte-nous** pour connaître la disponibilité dans ta région.
 
 ---
 ---
