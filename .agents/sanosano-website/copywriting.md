@@ -32,7 +32,10 @@ Le verre qu'on lève, la bulle qu'on partage, le moment qu'on crée ensemble —
 ### SECTION 3 — La promesse (Solution/Benefits)
 
 **Header :**
-## Une bulle pensée comme un grand effervescent.<br>Sauf qu'il n'y a rien dedans à regretter.
+## Botanique. Pétillant. Irréprochable.
+
+**Sous-header :**
+## Complexe. Pur. Jamais fermenté.
 
 **Bénéfices (4 colonnes) :**
 
