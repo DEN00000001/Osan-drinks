@@ -136,22 +136,16 @@ Quand chacun lève son verre — sans exclusion.
 ## SANO SANO près de chez toi.
 
 **Sous-titre :**
-En boutique ou dans tes restaurants préférés. Découvre où trouver nos bulles.
+Découvre nos distributeurs — cavistes, épiceries fines, magasins bio.
 
 **[MAP INTERACTIVE - Google Maps / Mapbox]**
 
-**Points de vente :**
+**Nos distributeurs :**
 
-| 🍇 **En boutique** | 🍽️ **En restaurant** |
-|---|---|
-| Cavistes sélectionnés<br>Épiceries fines<br>Magasins bio | Restaurants partenaires<br>Hôtels<br>Bars à vin<br>Traiteurs |
-
-**Filtre la map par type :**
-- [x] Points de vente physiques  
-- [x] Restaurants/HoReCa
+Cavistes sélectionnés · Épiceries fines · Magasins bio
 
 **Ou cherche par code postal :**
-`[Champ de saisie CP]` → `Chercher à proximité`
+`[Champ de saisie CP]` → `Trouver près de chez moi`
 
 ---
 
@@ -167,7 +161,7 @@ En boutique ou dans tes restaurants préférés. Découvre où trouver nos bulle
 - `🗺️ Trouver près de chez moi` (scroll to map)
 - `📍 Découvrir nos points de vente`
 
-**Reassurance :** 100% bio · Conservé naturellement · Disponible en caviste, épicerie fine et restaurants
+**Reassurance :** 100% bio · Conservé naturellement · Disponible en caviste et épicerie fine
 
 ---
 ---
@@ -463,10 +457,10 @@ Et derrière tout cela — le goût pur de la plante, intact.
 ### HERO
 
 **Headline :**
-# Où goûter SANO SANO ?
+# Où trouver SANO SANO ?
 
 **Subheadline :**
-Découvrez nos points de vente — cavistes, épiceries fines, restaurants et bars à vin qui proposent nos bulles.
+Découvrez nos distributeurs — cavistes, épiceries fines, magasins bio qui proposent nos bulles.
 
 ---
 
@@ -482,11 +476,11 @@ Découvrez nos points de vente — cavistes, épiceries fines, restaurants et ba
 
 ---
 
-### SECTION — Trouver près de chez toi
+### SECTION — Nos distributeurs
 
-**Map interactive** avec filtres par type de point de vente (caviste, épicerie fine, restaurant, bar à vin).
+Cherche près de chez toi parmi nos cavistes, épiceries fines et magasins bio partenaires.
 
-**Ou contacte-nous** pour connaître la disponibilité dans ta région.
+**Ou contacte-nous** pour connaître la disponibilité dans ta région ou devenir distributeur.
 
 ---
 ---
